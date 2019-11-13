@@ -36,34 +36,35 @@ for row in stats:
 	position = cols[4]
 	score = float(cols[5])
 	started = cols[6] == 'true'
+	key = name + nflteam
 
 	if team not in team_stats_dict:
 		team_stats_dict[team] = {}
 
-	if name not in team_stats_dict[team]:
+	if key not in team_stats_dict[team]:
 		player_dict = {}
 		player_dict['score'] = 0
 		player_dict['starts'] = 0
 		player_dict['name'] = name
 		player_dict['nflteam'] = nflteam
 		player_dict['position'] = position
-		team_stats_dict[team][name] = player_dict
+		team_stats_dict[team][key] = player_dict
 
-	if name not in player_stats_dict:
+	if key not in player_stats_dict:
 		player_dict = {}
 		player_dict['score'] = 0
 		player_dict['starts'] = 0
 		player_dict['name'] = name
 		player_dict['nflteam'] = nflteam
 		player_dict['position'] = position
-		player_stats_dict[name] = player_dict
+		player_stats_dict[key] = player_dict
 
 	if started:
-		team_stats_dict[team][name]['score'] += score
-		team_stats_dict[team][name]['starts'] += 1
+		team_stats_dict[team][key]['score'] += score
+		team_stats_dict[team][key]['starts'] += 1
 
-		player_stats_dict[name]['score'] += score
-		player_stats_dict[name]['starts'] += 1
+		player_stats_dict[key]['score'] += score
+		player_stats_dict[key]['starts'] += 1
 
 		if position not in position_scores:
 			position_scores[position] = []

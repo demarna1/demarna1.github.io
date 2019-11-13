@@ -12,7 +12,8 @@ Run parsing script with:
 
 ```
 npm install cheerio
-node parse.js > data/results.csv
+node parse_draft.js > data/results-draft.csv
+node parse.js > data/results-midpoint.csv
 ```
 
 Run stats script with:
