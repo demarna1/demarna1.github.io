@@ -125,6 +125,38 @@ team,week,name,nflteam,position,score,started
 1,8,Matt Ryan,Atl,QB,0.00,false
 1,8,Robbie Gould,SF,K,8.00,true
 1,8,Pittsburgh,Pit,DEF,14.50,true
+1,9,Matthew Stafford,Det,QB,24.84,true
+1,9,DeAndre Hopkins,Hou,WR,15.40,true
+1,9,Tyreek Hill,KC,WR,23.50,true
+1,9,Nick Chubb,Cle,RB,11.10,true
+1,9,Josh Jacobs,Oak,RB,24.00,true
+1,9,Cameron Brate,TB,TE,0.00,true
+1,9,Courtland Sutton,Den,WR,14.80,true
+1,9,Marlon Mack,Ind,RB,8.90,false
+1,9,Cooper Kupp,LAR,WR,0.00,false
+1,9,Austin Hooper,Atl,TE,0.00,false
+1,9,Latavius Murray,NO,RB,0.00,false
+1,9,Terry McLaurin,Was,WR,5.90,false
+1,9,Kareem Hunt,Cle,RB,0.00,false
+1,9,Matt Ryan,Atl,QB,0.00,false
+1,9,Robbie Gould,SF,K,4.00,true
+1,9,Pittsburgh,Pit,DEF,19.50,true
+1,10,Matt Ryan,Atl,QB,14.58,true
+1,10,Tyreek Hill,KC,WR,27.50,true
+1,10,Cooper Kupp,LAR,WR,0.00,true
+1,10,Nick Chubb,Cle,RB,13.10,true
+1,10,Josh Jacobs,Oak,RB,17.60,true
+1,10,Austin Hooper,Atl,TE,9.70,true
+1,10,Marlon Mack,Ind,RB,8.70,true
+1,10,Courtland Sutton,Den,WR,0.00,false
+1,10,DeAndre Hopkins,Hou,WR,0.00,false
+1,10,Latavius Murray,NO,RB,2.90,false
+1,10,Kareem Hunt,Cle,RB,10.90,false
+1,10,Damien Williams,KC,RB,11.40,false
+1,10,Terry McLaurin,Was,WR,0.00,false
+1,10,Matthew Stafford,Det,QB,0.00,false
+1,10,Michael Badgley,LAC,K,5.00,true
+1,10,Pittsburgh,Pit,DEF,22.00,true
 2,1,Carson Wentz,Phi,QB,25.02,true
 2,1,Keenan Allen,LAC,WR,22.30,true
 2,1,Chris Godwin,TB,WR,12.80,true
@@ -251,6 +283,38 @@ team,week,name,nflteam,position,score,started
 2,8,DeSean Jackson,Phi,WR,0.00,false
 2,8,Mason Crosby,GB,K,7.00,true
 2,8,New Orleans,NO,DEF,10.00,true
+2,9,Carson Wentz,Phi,QB,15.06,true
+2,9,Chris Godwin,TB,WR,10.40,true
+2,9,Keenan Allen,LAC,WR,5.50,true
+2,9,Le'Veon Bell,NYJ,RB,16.10,true
+2,9,Phillip Lindsay,Den,RB,15.20,true
+2,9,Travis Kelce,KC,TE,9.70,true
+2,9,Jamaal Williams,GB,RB,13.90,true
+2,9,James White,NE,RB,15.40,false
+2,9,DJ Moore,Car,WR,13.60,false
+2,9,Ronald Jones II,TB,RB,15.20,false
+2,9,Drew Brees,NO,QB,0.00,false
+2,9,DeSean Jackson,Phi,WR,1.00,false
+2,9,T.Y. Hilton,Ind,WR,0.00,false
+2,9,Mason Crosby,GB,K,4.00,true
+2,9,Carolina,Car,DEF,10.50,true
+2,9,New Orleans,NO,DEF,0.00,false
+2,10,Drew Brees,NO,QB,11.48,true
+2,10,Keenan Allen,LAC,WR,12.60,true
+2,10,Chris Godwin,TB,WR,10.40,true
+2,10,Le'Veon Bell,NYJ,RB,14.80,true
+2,10,Ronald Jones II,TB,RB,18.60,true
+2,10,Travis Kelce,KC,TE,17.00,true
+2,10,DJ Moore,Car,WR,16.50,true
+2,10,Jamaal Williams,GB,RB,6.30,false
+2,10,Phillip Lindsay,Den,RB,0.00,false
+2,10,Carson Wentz,Phi,QB,0.00,false
+2,10,James White,NE,RB,0.00,false
+2,10,Gus Edwards,Bal,RB,1.70,false
+2,10,Raheem Mostert,SF,RB,4.00,false
+2,10,T.Y. Hilton,Ind,WR,0.00,false
+2,10,Mason Crosby,GB,K,6.00,true
+2,10,New Orleans,NO,DEF,1.50,true
 3,1,Aaron Rodgers,GB,QB,12.92,true
 3,1,Davante Adams,GB,WR,5.60,true
 3,1,Adam Thielen,Min,WR,11.80,true
@@ -375,6 +439,38 @@ team,week,name,nflteam,position,score,started
 3,8,Wil Lutz,NO,K,5.00,true
 3,8,San Francisco,SF,DEF,20.50,true
 3,8,Buffalo,Buf,DEF,7.00,false
+3,9,Aaron Rodgers,GB,QB,12.94,true
+3,9,DJ Chark Jr.,Jax,WR,5.20,true
+3,9,Davante Adams,GB,WR,7.60,true
+3,9,Dalvin Cook,Min,RB,13.60,true
+3,9,Chris Carson,Sea,RB,12.30,true
+3,9,Jonnu Smith,Ten,TE,3.30,true
+3,9,Julian Edelman,NE,WR,11.90,true
+3,9,Austin Ekeler,LAC,RB,11.30,false
+3,9,John Brown,Buf,WR,9.60,false
+3,9,Adam Thielen,Min,WR,0.00,false
+3,9,Alexander Mattison,Min,RB,0.60,false
+3,9,Nick Foles,Jax,QB,0.00,false
+3,9,Dan Bailey,Min,K,3.00,true
+3,9,Wil Lutz,NO,K,0.00,false
+3,9,San Francisco,SF,DEF,2.50,true
+3,9,Buffalo,Buf,DEF,9.00,false
+3,10,Aaron Rodgers,GB,QB,10.02,true
+3,10,Davante Adams,GB,WR,15.30,true
+3,10,John Brown,Buf,WR,10.20,true
+3,10,Dalvin Cook,Min,RB,27.80,true
+3,10,Austin Ekeler,LAC,RB,11.80,true
+3,10,Gerald Everett,LAR,TE,10.80,true
+3,10,Chris Carson,Sea,RB,17.60,true
+3,10,Julian Edelman,NE,WR,0.00,false
+3,10,DJ Chark Jr.,Jax,WR,0.00,false
+3,10,Alexander Mattison,Min,RB,5.90,false
+3,10,Jimmy Garoppolo,SF,QB,10.02,false
+3,10,Eric Ebron,Ind,TE,8.10,false
+3,10,Adam Thielen,Min,WR,0.00,false
+3,10,Wil Lutz,NO,K,7.00,true
+3,10,Buffalo,Buf,DEF,7.50,true
+3,10,San Francisco,SF,DEF,20.00,false
 4,1,Patrick Mahomes,KC,QB,27.32,true
 4,1,Michael Thomas,NO,WR,17.30,true
 4,1,Alshon Jeffery,Phi,WR,19.60,true
@@ -495,6 +591,36 @@ team,week,name,nflteam,position,score,started
 4,8,Dede Westbrook,Jax,WR,0.00,false
 4,8,Greg Zuerlein,LAR,K,5.00,true
 4,8,Chicago,Chi,DEF,4.50,true
+4,9,Philip Rivers,LAC,QB,11.76,true
+4,9,Alshon Jeffery,Phi,WR,5.60,true
+4,9,Danny Amendola,Det,WR,4.40,true
+4,9,David Montgomery,Chi,RB,21.10,true
+4,9,Aaron Jones,GB,RB,3.40,true
+4,9,Hunter Henry,LAC,TE,11.90,true
+4,9,Jordan Howard,Phi,RB,14.80,true
+4,9,Sterling Shepard,NYG,WR,0.00,false
+4,9,Michael Thomas,NO,WR,0.00,false
+4,9,Patrick Mahomes,KC,QB,0.00,false
+4,9,Kenyan Drake,Ari,RB,26.20,false
+4,9,Mark Walton,Mia,RB,5.60,false
+4,9,Brett Maher,Dal,K,13.00,true
+4,9,Greg Zuerlein,LAR,K,0.00,false
+4,9,Chicago,Chi,DEF,5.00,true
+4,10,Patrick Mahomes,KC,QB,29.84,true
+4,10,Danny Amendola,Det,WR,4.90,true
+4,10,Michael Thomas,NO,WR,21.70,true
+4,10,David Montgomery,Chi,RB,6.00,true
+4,10,Aaron Jones,GB,RB,27.30,true
+4,10,Hunter Henry,LAC,TE,11.00,true
+4,10,Kenyan Drake,Ari,RB,7.10,true
+4,10,Jordan Howard,Phi,RB,0.00,false
+4,10,Philip Rivers,LAC,QB,10.28,false
+4,10,Alshon Jeffery,Phi,WR,0.00,false
+4,10,Sterling Shepard,NYG,WR,0.00,false
+4,10,Kalen Ballage,Mia,RB,6.50,false
+4,10,Greg Zuerlein,LAR,K,4.00,true
+4,10,Brett Maher,Dal,K,5.00,false
+4,10,Chicago,Chi,DEF,6.00,true
 5,1,Drew Brees,NO,QB,20.80,true
 5,1,Emmanuel Sanders,SF,WR,17.10,true
 5,1,Tyler Boyd,Cin,WR,10.30,true
@@ -622,6 +748,38 @@ team,week,name,nflteam,position,score,started
 5,8,Josh Lambo,Jax,K,8.00,true
 5,8,Jacksonville,Jax,DEF,19.50,true
 5,8,Denver,Den,DEF,7.50,false
+5,9,Gardner Minshew II,Jax,QB,7.76,true
+5,9,Stefon Diggs,Min,WR,2.10,true
+5,9,Emmanuel Sanders,SF,WR,20.70,true
+5,9,Sony Michel,NE,RB,3.50,true
+5,9,Carlos Hyde,Hou,RB,14.00,true
+5,9,T.J. Hockenson,Det,TE,7.10,true
+5,9,Devin Singletary,Buf,RB,21.50,true
+5,9,Kyler Murray,Ari,QB,23.04,false
+5,9,Devonta Freeman,Atl,RB,0.00,false
+5,9,David Johnson,Ari,RB,0.00,false
+5,9,Tyler Boyd,Cin,WR,0.00,false
+5,9,Adrian Peterson,Was,RB,13.50,false
+5,9,Derrius Guice,Was,RB,0.00,false
+5,9,Josh Lambo,Jax,K,3.00,true
+5,9,Denver,Den,DEF,4.50,true
+5,9,Jacksonville,Jax,DEF,2.00,false
+5,10,Kyler Murray,Ari,QB,26.76,true
+5,10,Stefon Diggs,Min,WR,6.40,true
+5,10,Emmanuel Sanders,SF,WR,3.40,true
+5,10,Devonta Freeman,Atl,RB,6.30,true
+5,10,Devin Singletary,Buf,RB,6.50,true
+5,10,T.J. Hockenson,Det,TE,6.20,true
+5,10,David Johnson,Ari,RB,-0.50,true
+5,10,Carlos Hyde,Hou,RB,0.00,false
+5,10,Sony Michel,NE,RB,0.00,false
+5,10,Tyler Boyd,Cin,WR,9.20,false
+5,10,Adrian Peterson,Was,RB,0.00,false
+5,10,Derrius Guice,Was,RB,0.00,false
+5,10,Zane Gonzalez,Ari,K,10.00,true
+5,10,Kansas City,KC,DEF,4.00,true
+5,10,Denver,Den,DEF,0.00,false
+5,10,Jacksonville,Jax,DEF,0.00,false
 6,1,Lamar Jackson,Bal,QB,33.56,true
 6,1,JuJu Smith-Schuster,Pit,WR,10.80,true
 6,1,Robert Woods,LAR,WR,12.60,true
@@ -743,6 +901,36 @@ team,week,name,nflteam,position,score,started
 6,8,Chris Thompson,Was,RB,0.00,false
 6,8,Matt Prater,Det,K,8.00,true
 6,8,Tennessee,Ten,DEF,10.00,true
+6,9,Kirk Cousins,Min,QB,21.30,true
+6,9,Kenny Golladay,Det,WR,21.20,true
+6,9,JuJu Smith-Schuster,Pit,WR,3.10,true
+6,9,Tevin Coleman,SF,RB,4.60,true
+6,9,Jaylen Samuels,Pit,RB,12.80,true
+6,9,Zach Ertz,Phi,TE,20.80,true
+6,9,Ezekiel Elliott,Dal,RB,13.90,true
+6,9,Lamar Jackson,Bal,QB,28.62,false
+6,9,Royce Freeman,Den,RB,1.90,false
+6,9,Christian Kirk,Ari,WR,2.60,false
+6,9,Robert Woods,LAR,WR,0.00,false
+6,9,Sammy Watkins,KC,WR,9.80,false
+6,9,Tony Pollard,Dal,RB,3.50,false
+6,9,Matt Prater,Det,K,5.00,true
+6,9,Seattle,Sea,DEF,1.00,true
+6,10,Lamar Jackson,Bal,QB,33.42,true
+6,10,Kenny Golladay,Det,WR,13.20,true
+6,10,JuJu Smith-Schuster,Pit,WR,5.90,true
+6,10,Jaylen Samuels,Pit,RB,5.50,true
+6,10,Ezekiel Elliott,Dal,RB,7.30,true
+6,10,Vance McDonald,Pit,TE,2.80,true
+6,10,Tevin Coleman,SF,RB,9.20,true
+6,10,Zach Ertz,Phi,TE,0.00,false
+6,10,Kirk Cousins,Min,QB,19.30,false
+6,10,Royce Freeman,Den,RB,0.00,false
+6,10,Christian Kirk,Ari,WR,34.80,false
+6,10,Robert Woods,LAR,WR,13.00,false
+6,10,Tony Pollard,Dal,RB,-0.40,false
+6,10,Matt Prater,Det,K,7.00,true
+6,10,New York,NYG,DEF,3.00,true
 7,1,Deshaun Watson,Hou,QB,30.72,true
 7,1,Odell Beckham Jr.,Cle,WR,10.60,true
 7,1,Amari Cooper,Dal,WR,19.60,true
@@ -753,7 +941,7 @@ team,week,name,nflteam,position,score,started
 7,1,Dede Westbrook,Jax,WR,11.70,false
 7,1,Matt Breida,SF,RB,3.70,false
 7,1,Will Fuller V,Hou,WR,7.90,false
-7,1,Donte Moncrief,Pit,WR,2.20,false
+7,1,Donte Moncrief,Car,WR,2.20,false
 7,1,Jamison Crowder,NYJ,WR,17.30,false
 7,1,Dak Prescott,Dal,QB,33.40,false
 7,1,Ka'imi Fairbairn,Hou,K,4.00,true
@@ -768,7 +956,7 @@ team,week,name,nflteam,position,score,started
 7,2,Dede Westbrook,Jax,WR,0.80,false
 7,2,Matt Breida,SF,RB,13.70,false
 7,2,Will Fuller V,Hou,WR,6.00,false
-7,2,Donte Moncrief,Pit,WR,0.00,false
+7,2,Donte Moncrief,Car,WR,0.00,false
 7,2,Jamison Crowder,NYJ,WR,6.00,false
 7,2,Dak Prescott,Dal,QB,27.66,false
 7,2,Ka'imi Fairbairn,Hou,K,6.00,true
@@ -864,6 +1052,38 @@ team,week,name,nflteam,position,score,started
 7,8,Will Fuller V,Hou,WR,0.00,false
 7,8,Ka'imi Fairbairn,Hou,K,9.00,true
 7,8,Minnesota,Min,DEF,10.50,true
+7,9,Deshaun Watson,Hou,QB,19.74,true
+7,9,Odell Beckham Jr.,Cle,WR,10.70,true
+7,9,Amari Cooper,Dal,WR,16.00,true
+7,9,Matt Breida,SF,RB,10.20,true
+7,9,Mark Ingram II,Bal,RB,13.40,true
+7,9,Evan Engram,NYG,TE,8.00,true
+7,9,Marvin Jones Jr.,Det,WR,22.60,true
+7,9,Jamison Crowder,NYJ,WR,18.30,false
+7,9,Corey Davis,Ten,WR,6.80,false
+7,9,Joe Mixon,Cin,RB,0.00,false
+7,9,Alvin Kamara,NO,RB,0.00,false
+7,9,Greg Olsen,Car,TE,5.50,false
+7,9,Dak Prescott,Dal,QB,21.48,false
+7,9,Will Fuller V,Hou,WR,0.00,false
+7,9,Ka'imi Fairbairn,Hou,K,8.00,true
+7,9,Minnesota,Min,DEF,8.00,true
+7,10,Dak Prescott,Dal,QB,25.88,true
+7,10,Odell Beckham Jr.,Cle,WR,8.20,true
+7,10,Amari Cooper,Dal,WR,26.20,true
+7,10,Mark Ingram II,Bal,RB,9.40,true
+7,10,Alvin Kamara,NO,RB,11.40,true
+7,10,Greg Olsen,Car,TE,13.80,true
+7,10,Jamison Crowder,NYJ,WR,16.60,true
+7,10,Marvin Jones Jr.,Det,WR,10.20,false
+7,10,Evan Engram,NYG,TE,0.00,false
+7,10,Deshaun Watson,Hou,QB,0.00,false
+7,10,Matt Breida,SF,RB,3.50,false
+7,10,Joe Mixon,Cin,RB,16.10,false
+7,10,Will Fuller V,Hou,WR,0.00,false
+7,10,Brandin Cooks,LAR,WR,0.00,false
+7,10,Matt Gay,TB,K,12.00,true
+7,10,Minnesota,Min,DEF,1.50,true
 8,1,Russell Wilson,Sea,QB,16.60,true
 8,1,Julio Jones,Atl,WR,12.10,true
 8,1,Mike Williams,LAC,WR,3.90,true
@@ -984,6 +1204,36 @@ team,week,name,nflteam,position,score,started
 8,8,Justin Tucker,Bal,K,0.00,false
 8,8,Los Angeles,LAR,DEF,6.50,true
 8,8,Houston,Hou,DEF,0.50,false
+8,9,Russell Wilson,Sea,QB,39.22,true
+8,9,Larry Fitzgerald,Ari,WR,5.80,true
+8,9,Mike Williams,LAC,WR,12.80,true
+8,9,Leonard Fournette,Jax,RB,9.70,true
+8,9,James Conner,Pit,RB,0.00,true
+8,9,Jimmy Graham,GB,TE,3.70,true
+8,9,Mark Andrews,Bal,TE,3.10,true
+8,9,Julio Jones,Atl,WR,0.00,false
+8,9,Jarvis Landry,Cle,WR,14.10,false
+8,9,Rashaad Penny,Sea,RB,1.20,false
+8,9,Jameis Winston,TB,QB,20.20,false
+8,9,Jason Myers,Sea,K,4.00,true
+8,9,Justin Tucker,Bal,K,6.00,false
+8,9,Dallas,Dal,DEF,20.00,true
+8,9,Los Angeles,LAR,DEF,0.00,false
+8,10,Russell Wilson,Sea,QB,16.58,true
+8,10,Mike Williams,LAC,WR,6.50,true
+8,10,Julio Jones,Atl,WR,9.40,true
+8,10,Tarik Cohen,Chi,RB,11.70,true
+8,10,Ty Johnson,Det,RB,2.40,true
+8,10,Mark Andrews,Bal,TE,20.30,true
+8,10,Larry Fitzgerald,Ari,WR,11.10,true
+8,10,Ryan Tannehill,Ten,QB,18.94,false
+8,10,James Conner,Pit,RB,0.00,false
+8,10,Leonard Fournette,Jax,RB,0.00,false
+8,10,Jimmy Graham,GB,TE,6.90,false
+8,10,Jarvis Landry,Cle,WR,20.20,false
+8,10,Tom Brady,NE,QB,0.00,false
+8,10,Justin Tucker,Bal,K,7.00,true
+8,10,Los Angeles,LAR,DEF,22.50,true
 9,1,Baker Mayfield,Cle,QB,9.40,true
 9,1,Mike Evans,TB,WR,3.80,true
 9,1,Brandin Cooks,LAR,WR,4.90,true
@@ -1104,13 +1354,44 @@ team,week,name,nflteam,position,score,started
 9,8,LeSean McCoy,KC,RB,6.30,false
 9,8,Robby Anderson,NYJ,WR,6.30,false
 9,8,Jacoby Brissett,Ind,QB,9.48,false
-9,8,Josh Gordon,NE,WR,0.00,false
+9,8,Josh Gordon,Sea,WR,0.00,false
 9,8,Harrison Butker,KC,K,5.00,true
 9,8,New England,NE,DEF,18.50,true
 9,8,Baltimore,Bal,DEF,0.00,false
+9,9,Tom Brady,NE,QB,13.40,true
+9,9,Allen Robinson II,Chi,WR,1.10,true
+9,9,Mike Evans,TB,WR,30.00,true
+9,9,Derrick Henry,Ten,RB,23.40,true
+9,9,Saquon Barkley,NYG,RB,12.50,true
+9,9,Darren Waller,Oak,TE,6.20,true
+9,9,Robby Anderson,NYJ,WR,4.30,true
+9,9,Ty Johnson,Det,RB,5.10,false
+9,9,Calvin Ridley,Atl,WR,0.00,false
+9,9,Golden Tate,NYG,WR,8.80,false
+9,9,Jacoby Brissett,Ind,QB,2.76,false
+9,9,Darrell Henderson Jr.,LAR,RB,0.00,false
+9,9,Josh Gordon,Sea,WR,0.00,false
+9,9,Harrison Butker,KC,K,14.00,true
+9,9,New England,NE,DEF,2.50,true
+9,9,Baltimore,Bal,DEF,11.50,false
+9,10,Jameis Winston,TB,QB,18.32,true
+9,10,Allen Robinson II,Chi,WR,11.60,true
+9,10,Mike Evans,TB,WR,10.20,true
+9,10,Derrick Henry,Ten,RB,32.10,true
+9,10,Saquon Barkley,NYG,RB,5.60,true
+9,10,Darren Waller,Oak,TE,5.50,true
+9,10,Golden Tate,NYG,WR,21.50,true
+9,10,Calvin Ridley,Atl,WR,6.20,false
+9,10,Mohamed Sanu,NE,WR,0.00,false
+9,10,Nick Foles,Jax,QB,0.00,false
+9,10,O.J. Howard,TB,TE,12.70,false
+9,10,Dede Westbrook,Jax,WR,0.00,false
+9,10,Harrison Butker,KC,K,13.00,true
+9,10,Baltimore,Bal,DEF,23.50,true
+9,10,New England,NE,DEF,0.00,false
 10,1,Cam Newton,Car,QB,5.36,true
 10,1,Tyler Lockett,Sea,WR,10.90,true
-10,1,Josh Gordon,NE,WR,14.80,true
+10,1,Josh Gordon,Sea,WR,14.80,true
 10,1,Christian McCaffrey,Car,RB,37.90,true
 10,1,Todd Gurley II,LAR,RB,10.60,true
 10,1,George Kittle,SF,TE,9.40,true
@@ -1126,7 +1407,7 @@ team,week,name,nflteam,position,score,started
 10,1,Seattle,Sea,DEF,12.50,true
 10,2,Cam Newton,Car,QB,11.32,true
 10,2,Tyler Lockett,Sea,WR,12.90,true
-10,2,Josh Gordon,NE,WR,2.90,true
+10,2,Josh Gordon,Sea,WR,2.90,true
 10,2,Christian McCaffrey,Car,RB,6.30,true
 10,2,Todd Gurley II,LAR,RB,14.20,true
 10,2,George Kittle,SF,TE,6.90,true
@@ -1140,7 +1421,7 @@ team,week,name,nflteam,position,score,started
 10,2,Adrian Peterson,Was,RB,10.20,false
 10,2,Stephen Gostkowski,NE,K,3.00,true
 10,3,Josh Allen,Buf,QB,18.32,true
-10,3,Josh Gordon,NE,WR,11.40,true
+10,3,Josh Gordon,Sea,WR,11.40,true
 10,3,John Ross III,Cin,WR,1.20,true
 10,3,Christian McCaffrey,Car,RB,26.30,true
 10,3,Todd Gurley II,LAR,RB,4.30,true
@@ -1155,7 +1436,7 @@ team,week,name,nflteam,position,score,started
 10,3,Stephen Gostkowski,NE,K,5.00,true
 10,3,Buffalo,Buf,DEF,13.00,true
 10,4,Josh Allen,Buf,QB,8.72,true
-10,4,Josh Gordon,NE,WR,6.10,true
+10,4,Josh Gordon,Sea,WR,6.10,true
 10,4,Tyler Lockett,Sea,WR,7.10,true
 10,4,Christian McCaffrey,Car,RB,28.90,true
 10,4,Todd Gurley II,LAR,RB,22.50,true
@@ -1170,7 +1451,7 @@ team,week,name,nflteam,position,score,started
 10,4,Stephen Gostkowski,NE,K,2.00,true
 10,4,Indianapolis,Ind,DEF,2.50,true
 10,5,Josh Allen,Buf,QB,17.46,true
-10,5,Josh Gordon,NE,WR,8.40,true
+10,5,Josh Gordon,Sea,WR,8.40,true
 10,5,Tyler Lockett,Sea,WR,12.30,true
 10,5,Christian McCaffrey,Car,RB,44.70,true
 10,5,Todd Gurley II,LAR,RB,17.20,true
@@ -1186,7 +1467,7 @@ team,week,name,nflteam,position,score,started
 10,5,Mike Nugent,NE,K,7.00,true
 10,5,Carolina,Car,DEF,9.00,true
 10,6,Philip Rivers,LAC,QB,14.80,true
-10,6,Josh Gordon,NE,WR,1.20,true
+10,6,Josh Gordon,Sea,WR,1.20,true
 10,6,Tyler Lockett,Sea,WR,10.30,true
 10,6,Christian McCaffrey,Car,RB,19.70,true
 10,6,Melvin Gordon III,LAC,RB,6.30,true
@@ -1208,7 +1489,7 @@ team,week,name,nflteam,position,score,started
 10,7,Todd Gurley II,LAR,RB,11.90,true
 10,7,George Kittle,SF,TE,5.30,true
 10,7,Miles Sanders,Phi,RB,4.70,true
-10,7,Josh Gordon,NE,WR,0.00,false
+10,7,Josh Gordon,Sea,WR,0.00,false
 10,7,Christian McCaffrey,Car,RB,0.00,false
 10,7,Marquise Brown,Bal,WR,0.00,false
 10,7,Tyrell Williams,Oak,WR,0.00,false
@@ -1232,3 +1513,35 @@ team,week,name,nflteam,position,score,started
 10,8,Kenny Stills,Hou,WR,3.70,false
 10,8,Joey Slye,Car,K,3.00,true
 10,8,Indianapolis,Ind,DEF,7.00,true
+10,9,Josh Allen,Buf,QB,17.60,true
+10,9,Tyrell Williams,Oak,WR,6.30,true
+10,9,Tyler Lockett,Sea,WR,33.70,true
+10,9,Melvin Gordon III,LAC,RB,24.40,true
+10,9,Christian McCaffrey,Car,RB,36.10,true
+10,9,George Kittle,SF,TE,16.90,true
+10,9,DK Metcalf,Sea,WR,24.00,true
+10,9,Todd Gurley II,LAR,RB,0.00,false
+10,9,Michael Gallup,Dal,WR,10.30,false
+10,9,Miles Sanders,Phi,RB,8.80,false
+10,9,Marquise Brown,Bal,WR,6.30,false
+10,9,Kenny Stills,Hou,WR,7.20,false
+10,9,Darren Fells,Hou,TE,6.60,false
+10,9,Devin Funchess,Ind,WR,0.00,false
+10,9,Nick Folk,NE,K,6.00,true
+10,9,Indianapolis,Ind,DEF,12.00,true
+10,10,Josh Allen,Buf,QB,25.44,true
+10,10,Tyrell Williams,Oak,WR,4.00,true
+10,10,Tyler Lockett,Sea,WR,4.40,true
+10,10,Christian McCaffrey,Car,RB,23.10,true
+10,10,Todd Gurley II,LAR,RB,7.30,true
+10,10,Mike Gesicki,Mia,TE,2.30,true
+10,10,Melvin Gordon III,LAC,RB,19.80,true
+10,10,George Kittle,SF,TE,0.00,false
+10,10,DK Metcalf,Sea,WR,8.00,false
+10,10,Michael Gallup,Dal,WR,15.60,false
+10,10,Miles Sanders,Phi,RB,0.00,false
+10,10,Marquise Brown,Bal,WR,16.00,false
+10,10,Josh Gordon,Sea,WR,3.70,false
+10,10,Devin Funchess,Ind,WR,0.00,false
+10,10,Adam Vinatieri,Ind,K,4.00,true
+10,10,Indianapolis,Ind,DEF,11.50,true

@@ -7,8 +7,6 @@ def print_mvp_scores(list_name, players, position_averages):
 		if player['mvpscore'] != 0:
 			print '{},{},{},{}'.format(int(player['mvpscore']), player['name'], player['nflteam'], player['position'])
 
-stats = [line.strip() for line in open('data/results-midpoint.csv')][1:]
-
 teams_dict = {
 	'1': 'Kupp Runneth Over',
 	'2': 'Keenan & Bell',
@@ -21,6 +19,8 @@ teams_dict = {
 	'9': 'Vance Refrigeration',
 	'10': 'Mark'
 }
+
+stats = [line.strip() for line in open('data/results-week10.csv')][1:]
 
 team_stats_dict = {}
 player_stats_dict = {}
