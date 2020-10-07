@@ -6,6 +6,8 @@ for ((i=1;i<=10;i++)); do
         curl "https://football.fantasysports.yahoo.com/f1/178163/${i}/team?week=${j}" ${rest-of-curl-command-from-chrome} > html/team${i}_week${j}.html
     done
 done
+
+curl 'https://football.fantasysports.yahoo.com/f1/187033/draftresults' ${rest-of-curl-command-from-chrome} > html/draft_results.html
 ```
 
 Run parsing script with:
@@ -16,9 +18,10 @@ node parse_draft.js > data/results-draft.csv
 node parse.js > data/results-midpoint.csv
 ```
 
-Run stats script with:
+Run stats or profit script with:
 
 ```
-python stats.py > data/mvps.csv
+python stats.py > data/best-worst.csv
+python profit.py > data/steals-busts.csv
 ```
 

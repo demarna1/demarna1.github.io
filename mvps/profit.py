@@ -1,16 +1,18 @@
 import math
 
+# Values derived from median of top 10 highest average free agents
+# (minimum of 4 games played) (use higher of RB/WR value for both)
 replacement = {
-	'QB': 15.96,
-	'RB': 9.17,
-	'WR': 9.17,
-	'TE': 6.87,
-	'K': 7.33,
-	'DEF': 8.17
+	'QB': 17.03,
+	'RB': 6.70,
+	'WR': 7.20,
+	'TE': 5.96,
+	'K': 9.00,
+	'DEF': 5.63
 }
 
 def auction_value(pick):
-	return 304*math.exp(-0.029*pick)
+	return 304 * math.exp(-0.029 * pick)
 
 def vor_value(player):
 	stub = replacement[player['position']]
@@ -19,7 +21,7 @@ def vor_value(player):
 def dollar_value(player):
 	return player['vor']*3
 
-stats = [line.strip() for line in open('data/results-week10.csv')][1:]
+stats = [line.strip() for line in open('data/results-week4.csv')][1:]
 stats_dict = {}
 
 for row in stats:
@@ -64,7 +66,7 @@ for row in draft:
 	nflteam = cols[2]
 	position = cols[3]
 	key = name + nflteam
-	draft_price = 304 * math.exp(-0.029 * pick)
+	draft_price = auction_value(pick)
 	if key in stats_dict:
 		real_price = stats_dict[key]['dollar']
 	else:

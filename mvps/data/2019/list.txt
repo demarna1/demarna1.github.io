@@ -1,0 +1,541 @@
+Value Over Replacement
+$497,Christian McCaffrey,Car,RB
+$383,Dalvin Cook,Min,RB
+$306,Aaron Jones,GB,RB
+$265,New England,NE,DEF
+$258,Michael Thomas,NO,WR
+$244,Russell Wilson,Sea,QB
+$244,Lamar Jackson,Bal,QB
+$242,Mike Evans,TB,WR
+$218,Derrick Henry,Ten,RB
+$212,Amari Cooper,Dal,WR
+$208,Nick Chubb,Cle,RB
+$196,Josh Jacobs,Oak,RB
+$187,Ezekiel Elliott,Dal,RB
+$184,Deshaun Watson,Hou,QB
+$178,Austin Hooper,Atl,TE
+$171,Cooper Kupp,LAR,WR
+$162,Tyler Lockett,Sea,WR
+$162,Leonard Fournette,Jax,RB
+$162,Chris Carson,Sea,RB
+$154,Patrick Mahomes,KC,QB
+$154,Travis Kelce,KC,TE
+$141,Julio Jones,Atl,WR
+$136,Tyreek Hill,KC,WR
+$134,Mark Ingram II,Bal,RB
+$132,Chris Godwin,TB,WR
+$129,Pittsburgh,Pit,DEF
+$127,DeAndre Hopkins,Hou,WR
+$123,Alvin Kamara,NO,RB
+$122,Julian Edelman,NE,WR
+$118,Kenny Golladay,Det,WR
+$112,Darren Waller,Oak,TE
+$110,James Conner,Pit,RB
+$108,Saquon Barkley,NYG,RB
+$107,George Kittle,SF,TE
+$103,Austin Ekeler,LAC,RB
+$97,David Johnson,Ari,RB
+$97,Evan Engram,NYG,TE
+$96,Keenan Allen,LAC,WR
+$96,Aaron Rodgers,GB,QB
+$91,Adam Thielen,Min,WR
+$89,Le'Veon Bell,NYJ,RB
+$84,Matt Ryan,Atl,QB
+$80,Stefon Diggs,Min,WR
+$77,Zach Ertz,Phi,TE
+$75,Todd Gurley II,LAR,RB
+$69,Latavius Murray,NO,RB
+$68,Tom Brady,NE,QB
+$67,Tevin Coleman,SF,RB
+$64,Philadelphia,Phi,DEF
+$62,Kyler Murray,Ari,QB
+$61,DK Metcalf,Sea,WR
+$60,Allen Robinson II,Chi,WR
+$58,Melvin Gordon III,LAC,RB
+$58,Marlon Mack,Ind,RB
+$56,Carolina,Car,DEF
+$54,Davante Adams,GB,WR
+$52,Los Angeles,LAR,DEF
+$50,Sterling Shepard,NYG,WR
+$49,Dak Prescott,Dal,QB
+$48,Matthew Stafford,Det,QB
+$48,Mark Andrews,Bal,TE
+$47,Hunter Henry,LAC,TE
+$47,Harrison Butker,KC,K
+$45,San Francisco,SF,DEF
+$43,David Montgomery,Chi,RB
+$43,Josh Allen,Buf,QB
+$41,Buffalo,Buf,DEF
+$40,Courtland Sutton,Den,WR
+$36,Golden Tate,NYG,WR
+$34,T.Y. Hilton,Ind,WR
+$32,Carson Wentz,Phi,QB
+$31,Justin Tucker,Bal,K
+$30,DJ Moore,Car,WR
+$28,Devin Singletary,Buf,RB
+$28,Ronald Jones II,TB,RB
+$27,Drew Brees,NO,QB
+$27,Devonta Freeman,Atl,RB
+$26,Kerryon Johnson,Det,RB
+$25,Odell Beckham Jr.,Cle,WR
+$25,Marvin Jones Jr.,Det,WR
+$23,Wayne Gallman Jr.,NYG,RB
+$22,Jamison Crowder,NYJ,WR
+$21,Greg Olsen,Car,TE
+$21,Jordan Howard,Phi,RB
+$20,Jared Goff,LAR,QB
+$16,Adrian Peterson,Was,RB
+$16,Tyler Boyd,Cin,WR
+$16,Will Dissly,Sea,TE
+$16,James White,NE,RB
+$15,Washington,Was,DEF
+$14,Antonio Brown,NE,WR
+$14,David Njoku,Cle,TE
+$14,Jamaal Williams,GB,RB
+$14,Matt Gay,TB,K
+$13,Curtis Samuel,Car,WR
+$11,Carlos Hyde,Hou,RB
+$11,Royce Freeman,Den,RB
+$10,Damien Williams,KC,RB
+$9,Alshon Jeffery,Phi,WR
+$8,Zane Gonzalez,Ari,K
+$7,Phillip Lindsay,Den,RB
+$7,Tarik Cohen,Chi,RB
+$7,Jameis Winston,TB,QB
+$6,New Orleans,NO,DEF
+$6,Baltimore,Bal,DEF
+$6,Greg Zuerlein,LAR,K
+$6,Wil Lutz,NO,K
+$5,JuJu Smith-Schuster,Pit,WR
+$4,Joe Mixon,Cin,RB
+$3,Dallas,Dal,DEF
+$2,Kirk Cousins,Min,QB
+$2,Gerald Everett,LAR,TE
+$1,Cleveland,Cle,DEF
+$0,Jarvis Landry,Cle,WR
+$0,Indianapolis,Ind,DEF
+$0,Brett Maher,Dal,K
+$0,Rex Burkhead,NE,RB
+$0,Peyton Barber,TB,RB
+$0,Rashaad Penny,Sea,RB
+$0,Chris Thompson,Was,RB
+$0,Sam Darnold,NYJ,QB
+$0,Derrius Guice,Was,RB
+$0,Dante Pettis,SF,WR
+$0,Kalen Ballage,Mia,RB
+$0,New York,NYJ,DEF
+$0,Mark Walton,Mia,RB
+$0,Tony Pollard,Dal,RB
+$0,Terry McLaurin,Was,WR
+$0,Chris Herndon,NYJ,TE
+$0,A.J. Green,Cin,WR
+$0,Teddy Bridgewater,NO,QB
+$0,DeSean Jackson,Phi,WR
+$0,Justice Hill,Bal,RB
+$0,Marquise Brown,Bal,WR
+$0,Nick Foles,Jax,QB
+$0,Alexander Mattison,Min,RB
+$0,Deebo Samuel,SF,WR
+$0,Nelson Agholor,Phi,WR
+$0,Darrell Henderson Jr.,LAR,RB
+$0,Jalen Richard,Oak,RB
+$0,Dede Westbrook,Jax,WR
+$0,Allen Lazard,GB,WR
+$0,Jeff Wilson Jr.,SF,RB
+$0,Devin Funchess,Ind,WR
+$0,Jason Witten,Dal,TE
+$0,Frank Gore,Buf,RB
+$0,Dare Ogunbowale,TB,RB
+$0,Jimmy Garoppolo,SF,QB
+$0,Donte Moncrief,Car,WR
+$0,Malcolm Brown,LAR,RB
+$0,Gus Edwards,Bal,RB
+$0,Houston,Hou,DEF
+$0,Christian Kirk,Ari,WR
+$0,Ryan Tannehill,Ten,QB
+$0,Tyler Eifert,Cin,TE
+$0,Kareem Hunt,Cle,RB
+$0,Mohamed Sanu,NE,WR
+$0,Dion Lewis,Ten,RB
+$0,Justin Jackson,LAC,RB
+$0,Reggie Bonnafon,Car,RB
+$0,Darren Fells,Hou,TE
+$0,Kenny Stills,Hou,WR
+$0,John Brown,Buf,WR
+$-2,Minnesota,Min,DEF
+$-2,Philip Rivers,LAC,QB
+$-3,Denver,Den,DEF
+$-3,LeSean McCoy,KC,RB
+$-3,Sony Michel,NE,RB
+$-3,Kenyan Drake,Ari,RB
+$-3,Nick Folk,NE,K
+$-4,Emmanuel Sanders,SF,WR
+$-4,Josh Lambo,Jax,K
+$-6,Jared Cook,NO,TE
+$-6,Michael Badgley,LAC,K
+$-7,Joey Slye,Car,K
+$-8,Seattle,Sea,DEF
+$-8,Marquez Valdes-Scantling,GB,WR
+$-9,Raheem Mostert,SF,RB
+$-9,Adam Vinatieri,Ind,K
+$-10,Jacksonville,Jax,DEF
+$-10,Jack Doyle,Ind,TE
+$-10,Jonnu Smith,Ten,TE
+$-10,Jake Elliott,Phi,K
+$-11,Demarcus Robinson,KC,WR
+$-11,Delanie Walker,Ten,TE
+$-11,Mike Nugent,NE,K
+$-12,Tyrell Williams,Oak,WR
+$-12,Kansas City,KC,DEF
+$-12,Duke Johnson,Hou,RB
+$-12,Dan Bailey,Min,K
+$-13,DJ Chark Jr.,Jax,WR
+$-13,Chicago,Chi,DEF
+$-13,Mike Gesicki,Mia,TE
+$-13,Matt Prater,Det,K
+$-14,Robby Anderson,NYJ,WR
+$-15,Jacoby Brissett,Ind,QB
+$-15,New York,NYG,DEF
+$-15,Stephen Gostkowski,NE,K
+$-16,Eric Ebron,Ind,TE
+$-17,Vernon Davis,Was,TE
+$-17,James Washington,Pit,WR
+$-18,Robert Woods,LAR,WR
+$-18,Brandin Cooks,LAR,WR
+$-19,Baker Mayfield,Cle,QB
+$-19,Michael Gallup,Dal,WR
+$-20,Tennessee,Ten,DEF
+$-20,Chase Edmonds,Ari,RB
+$-20,Cameron Brate,TB,TE
+$-21,Corey Davis,Ten,WR
+$-23,Matt Breida,SF,RB
+$-23,Mason Crosby,GB,K
+$-24,Jason Myers,Sea,K
+$-27,Danny Amendola,Det,WR
+$-27,T.J. Hockenson,Det,TE
+$-27,Phillip Dorsett II,NE,WR
+$-27,Jaylen Samuels,Pit,RB
+$-27,Mecole Hardman,KC,WR
+$-27,O.J. Howard,TB,TE
+$-29,Robbie Gould,SF,K
+$-30,Mike Williams,LAC,WR
+$-30,Josh Gordon,Sea,WR
+$-31,Will Fuller V,Hou,WR
+$-31,Miles Sanders,Phi,RB
+$-32,Ka'imi Fairbairn,Hou,K
+$-34,Ty Johnson,Det,RB
+$-35,Vance McDonald,Pit,TE
+$-36,John Ross III,Cin,WR
+$-37,Green Bay,GB,DEF
+$-39,Los Angeles,LAC,DEF
+$-39,Calvin Ridley,Atl,WR
+$-44,Sammy Watkins,KC,WR
+$-45,Cam Newton,Car,QB
+$-52,Noah Fant,Den,TE
+$-53,Larry Fitzgerald,Ari,WR
+$-58,Gardner Minshew II,Jax,QB
+$-60,Jimmy Graham,GB,TE
+
+Draft Profits
+1. Saquon Barkley -$186
+2. Alvin Kamara -$163
+3. Christian McCaffrey $219
+4. David Johnson -$172
+5. DeAndre Hopkins -$135
+6. Ezekiel Elliott -$68
+7. James Conner -$137
+8. Davante Adams -$186
+9. Nick Chubb -$25
+10. Le'Veon Bell -$137
+11. Travis Kelce -$66
+12. Michael Thomas $44
+13. Dalvin Cook $174
+14. Julio Jones -$61
+15. JuJu Smith-Schuster -$191
+16. Tyreek Hill -$54
+17. Devonta Freeman -$158
+18. Todd Gurley II -$105
+19. Odell Beckham Jr. -$149
+20. Mike Evans $72
+21. Damien Williams -$154
+22. Joe Mixon -$156
+23. George Kittle -$48
+24. Antonio Brown -$136
+25. Aaron Jones $159
+26. Zach Ertz -$65
+27. Kerryon Johnson -$112
+28. Adam Thielen -$43
+29. Patrick Mahomes $23
+30. Keenan Allen -$30
+31. Chris Godwin $8
+32. David Montgomery -$77
+33. Chris Carson $45
+34. Leonard Fournette $48
+35. Robert Woods -$128
+36. Josh Jacobs $89
+37. Stefon Diggs -$23
+38. Melvin Gordon III -$42
+39. Amari Cooper $114
+40. Brandin Cooks -$113
+41. Derrick Henry $125
+42. Mark Ingram II $44
+43. Tyler Lockett $74
+44. Sony Michel -$88
+45. Marlon Mack -$23
+46. Kenny Golladay $38
+47. O.J. Howard -$105
+48. Julian Edelman $46
+49. Tevin Coleman -$6
+50. Phillip Lindsay -$63
+51. T.Y. Hilton -$34
+52. Alshon Jeffery -$57
+53. Austin Ekeler $38
+54. Mike Williams -$93
+55. Duke Johnson -$74
+56. Cooper Kupp $111
+57. Tyler Boyd -$41
+58. Miles Sanders -$87
+59. Deshaun Watson $130
+60. Calvin Ridley -$92
+61. Allen Robinson II $9
+62. Evan Engram $46
+63. Robby Anderson -$63
+64. Derrius Guice -$47
+65. Hunter Henry $1
+66. Tarik Cohen -$37
+67. Jarvis Landry -$42
+68. Aaron Rodgers $54
+69. Kenyan Drake -$44
+70. DJ Moore -$9
+71. James White -$22
+72. A.J. Green -$37
+73. Jared Cook -$43
+74. Russell Wilson $208
+75. Royce Freeman -$22
+76. Latavius Murray $35
+77. David Njoku -$18
+78. Josh Gordon -$62
+79. Dede Westbrook -$30
+80. Vance McDonald -$65
+81. Baker Mayfield -$48
+82. Matt Breida -$51
+83. Cam Newton -$73
+84. Emmanuel Sanders -$31
+85. Matt Ryan $58
+86. Sammy Watkins -$70
+87. Mark Andrews $23
+88. Curtis Samuel -$9
+89. Greg Zuerlein -$16
+90. Carson Wentz $9
+91. Marvin Jones Jr. $3
+92. Eric Ebron -$37
+93. Tony Pollard -$20
+94. Rashaad Penny -$19
+95. Christian Kirk -$19
+96. Devin Singletary $10
+97. Kyler Murray $44
+98. Justin Jackson -$17
+99. Will Fuller V -$48
+100. LeSean McCoy -$20
+101. Darrell Henderson Jr. -$16
+102. Donte Moncrief -$15
+103. Darwin Thompson -$15
+104. Jacksonville -$24
+105. Damien Harris -$14
+106. Lamar Jackson $229
+107. Los Angeles $38
+108. Jordan Howard $8
+109. Sterling Shepard $37
+110. Peyton Barber -$12
+111. Marquez Valdes-Scantling -$21
+112. Chicago -$25
+113. Corey Davis -$33
+114. Justin Tucker $19
+115. Dante Pettis -$10
+116. Jamaal Williams $3
+117. Drew Brees $17
+118. Josh Allen $33
+119. Minnesota -$11
+120. DeSean Jackson -$9
+121. Harrison Butker $38
+122. Jamison Crowder $13
+123. Alexander Mattison -$8
+124. Kareem Hunt -$8
+125. Darrel Williams -$8
+126. Kalen Ballage -$7
+127. Jameis Winston -$0
+128. Adrian Peterson $8
+129. James Washington -$24
+130. Justice Hill -$7
+131. Baltimore -$0
+132. Jared Goff $14
+133. Wil Lutz -$0
+134. Larry Fitzgerald -$59
+135. Los Angeles -$45
+136. Cleveland -$3
+137. T.J. Hockenson -$32
+138. Stephen Gostkowski -$21
+139. Dak Prescott $44
+140. Austin Hooper $173
+141. Philadelphia $59
+142. Ka'imi Fairbairn -$37
+143. Seattle -$13
+144. Matt Prater -$18
+145. Robbie Gould -$34
+146. Mason Crosby -$28
+147. Houston -$4
+148. Dallas -$0
+149. Tyler Eifert -$4
+150. Brandon McManus -$3
+
+Overall Steals/Busts
+Lamar Jackson,Bal,QB (pick 106) $229
+Christian McCaffrey,Car,RB (pick 3) $219
+Russell Wilson,Sea,QB (pick 74) $208
+Dalvin Cook,Min,RB (pick 13) $174
+Austin Hooper,Atl,TE (pick 140) $173
+Aaron Jones,GB,RB (pick 25) $159
+Deshaun Watson,Hou,QB (pick 59) $130
+Derrick Henry,Ten,RB (pick 41) $125
+Amari Cooper,Dal,WR (pick 39) $114
+Cooper Kupp,LAR,WR (pick 56) $111
+Josh Jacobs,Oak,RB (pick 36) $89
+Tyler Lockett,Sea,WR (pick 43) $74
+Mike Evans,TB,WR (pick 20) $72
+Philadelphia,Phi,DEF (pick 141) $59
+Matt Ryan,Atl,QB (pick 85) $58
+Aaron Rodgers,GB,QB (pick 68) $54
+Leonard Fournette,Jax,RB (pick 34) $48
+Evan Engram,NYG,TE (pick 62) $46
+Julian Edelman,NE,WR (pick 48) $46
+Chris Carson,Sea,RB (pick 33) $45
+Mark Ingram II,Bal,RB (pick 42) $44
+Kyler Murray,Ari,QB (pick 97) $44
+Michael Thomas,NO,WR (pick 12) $44
+Dak Prescott,Dal,QB (pick 139) $44
+Kenny Golladay,Det,WR (pick 46) $38
+Los Angeles,LAR,DEF (pick 107) $38
+Austin Ekeler,LAC,RB (pick 53) $38
+Harrison Butker,KC,K (pick 121) $38
+Sterling Shepard,NYG,WR (pick 109) $37
+Latavius Murray,NO,RB (pick 76) $35
+Josh Allen,Buf,QB (pick 118) $33
+Mark Andrews,Bal,TE (pick 87) $23
+Patrick Mahomes,KC,QB (pick 29) $23
+Justin Tucker,Bal,K (pick 114) $19
+Drew Brees,NO,QB (pick 117) $17
+Jared Goff,LAR,QB (pick 132) $14
+Jamison Crowder,NYJ,WR (pick 122) $13
+Devin Singletary,Buf,RB (pick 96) $10
+Carson Wentz,Phi,QB (pick 90) $9
+Allen Robinson II,Chi,WR (pick 61) $9
+Chris Godwin,TB,WR (pick 31) $8
+Adrian Peterson,Was,RB (pick 128) $8
+Jordan Howard,Phi,RB (pick 108) $8
+Jamaal Williams,GB,RB (pick 116) $3
+Marvin Jones Jr.,Det,WR (pick 91) $3
+Hunter Henry,LAC,TE (pick 65) $1
+Dallas,Dal,DEF (pick 148) -$0
+Wil Lutz,NO,K (pick 133) -$0
+Baltimore,Bal,DEF (pick 131) -$0
+Jameis Winston,TB,QB (pick 127) -$0
+Cleveland,Cle,DEF (pick 136) -$3
+Brandon McManus,Den,K (pick 150) -$3
+Tyler Eifert,Cin,TE (pick 149) -$4
+Houston,Hou,DEF (pick 147) -$4
+Tevin Coleman,SF,RB (pick 49) -$6
+Justice Hill,Bal,RB (pick 130) -$7
+Kalen Ballage,Mia,RB (pick 126) -$7
+Darrel Williams,KC,RB (pick 125) -$8
+Kareem Hunt,Cle,RB (pick 124) -$8
+Alexander Mattison,Min,RB (pick 123) -$8
+DJ Moore,Car,WR (pick 70) -$9
+DeSean Jackson,Phi,WR (pick 120) -$9
+Curtis Samuel,Car,WR (pick 88) -$9
+Dante Pettis,SF,WR (pick 115) -$10
+Minnesota,Min,DEF (pick 119) -$11
+Peyton Barber,TB,RB (pick 110) -$12
+Seattle,Sea,DEF (pick 143) -$13
+Damien Harris,NE,RB (pick 105) -$14
+Darwin Thompson,KC,RB (pick 103) -$15
+Donte Moncrief,Car,WR (pick 102) -$15
+Darrell Henderson Jr.,LAR,RB (pick 101) -$16
+Greg Zuerlein,LAR,K (pick 89) -$16
+Justin Jackson,LAC,RB (pick 98) -$17
+David Njoku,Cle,TE (pick 77) -$18
+Matt Prater,Det,K (pick 144) -$18
+Christian Kirk,Ari,WR (pick 95) -$19
+Rashaad Penny,Sea,RB (pick 94) -$19
+LeSean McCoy,KC,RB (pick 100) -$20
+Tony Pollard,Dal,RB (pick 93) -$20
+Marquez Valdes-Scantling,GB,WR (pick 111) -$21
+Stephen Gostkowski,NE,K (pick 138) -$21
+James White,NE,RB (pick 71) -$22
+Royce Freeman,Den,RB (pick 75) -$22
+Stefon Diggs,Min,WR (pick 37) -$23
+Marlon Mack,Ind,RB (pick 45) -$23
+James Washington,Pit,WR (pick 129) -$24
+Jacksonville,Jax,DEF (pick 104) -$24
+Chicago,Chi,DEF (pick 112) -$25
+Nick Chubb,Cle,RB (pick 9) -$25
+Mason Crosby,GB,K (pick 146) -$28
+Keenan Allen,LAC,WR (pick 30) -$30
+Dede Westbrook,Jax,WR (pick 79) -$30
+Emmanuel Sanders,SF,WR (pick 84) -$31
+T.J. Hockenson,Det,TE (pick 137) -$32
+Corey Davis,Ten,WR (pick 113) -$33
+Robbie Gould,SF,K (pick 145) -$34
+T.Y. Hilton,Ind,WR (pick 51) -$34
+Tarik Cohen,Chi,RB (pick 66) -$37
+A.J. Green,Cin,WR (pick 72) -$37
+Eric Ebron,Ind,TE (pick 92) -$37
+Ka'imi Fairbairn,Hou,K (pick 142) -$37
+Tyler Boyd,Cin,WR (pick 57) -$41
+Melvin Gordon III,LAC,RB (pick 38) -$42
+Jarvis Landry,Cle,WR (pick 67) -$42
+Jared Cook,NO,TE (pick 73) -$43
+Adam Thielen,Min,WR (pick 28) -$43
+Kenyan Drake,Ari,RB (pick 69) -$44
+Los Angeles,LAC,DEF (pick 135) -$45
+Derrius Guice,Was,RB (pick 64) -$47
+George Kittle,SF,TE (pick 23) -$48
+Will Fuller V,Hou,WR (pick 99) -$48
+Baker Mayfield,Cle,QB (pick 81) -$48
+Matt Breida,SF,RB (pick 82) -$51
+Tyreek Hill,KC,WR (pick 16) -$54
+Alshon Jeffery,Phi,WR (pick 52) -$57
+Larry Fitzgerald,Ari,WR (pick 134) -$59
+Julio Jones,Atl,WR (pick 14) -$61
+Josh Gordon,Sea,WR (pick 78) -$62
+Phillip Lindsay,Den,RB (pick 50) -$63
+Robby Anderson,NYJ,WR (pick 63) -$63
+Vance McDonald,Pit,TE (pick 80) -$65
+Zach Ertz,Phi,TE (pick 26) -$65
+Travis Kelce,KC,TE (pick 11) -$66
+Ezekiel Elliott,Dal,RB (pick 6) -$68
+Sammy Watkins,KC,WR (pick 86) -$70
+Cam Newton,Car,QB (pick 83) -$73
+Duke Johnson,Hou,RB (pick 55) -$74
+David Montgomery,Chi,RB (pick 32) -$77
+Miles Sanders,Phi,RB (pick 58) -$87
+Sony Michel,NE,RB (pick 44) -$88
+Calvin Ridley,Atl,WR (pick 60) -$92
+Mike Williams,LAC,WR (pick 54) -$93
+Todd Gurley II,LAR,RB (pick 18) -$105
+O.J. Howard,TB,TE (pick 47) -$105
+Kerryon Johnson,Det,RB (pick 27) -$112
+Brandin Cooks,LAR,WR (pick 40) -$113
+Robert Woods,LAR,WR (pick 35) -$128
+DeAndre Hopkins,Hou,WR (pick 5) -$135
+Antonio Brown,NE,WR (pick 24) -$136
+Le'Veon Bell,NYJ,RB (pick 10) -$137
+James Conner,Pit,RB (pick 7) -$137
+Odell Beckham Jr.,Cle,WR (pick 19) -$149
+Damien Williams,KC,RB (pick 21) -$154
+Joe Mixon,Cin,RB (pick 22) -$156
+Devonta Freeman,Atl,RB (pick 17) -$158
+Alvin Kamara,NO,RB (pick 2) -$163
+David Johnson,Ari,RB (pick 4) -$172
+Saquon Barkley,NYG,RB (pick 1) -$186
+Davante Adams,GB,WR (pick 8) -$186
+JuJu Smith-Schuster,Pit,WR (pick 15) -$191

@@ -5,7 +5,7 @@ def print_mvp_scores(list_name, players, position_averages):
 	print '{} MVP scores:'.format(list_name)
 	for player in players_sorted:
 		if player['mvpscore'] != 0:
-			print '{},{},{},{}'.format(int(player['mvpscore']), player['name'], player['nflteam'], player['position'])
+			print '{},{},{}'.format(int(player['mvpscore']), player['name'], player['position'])
 
 teams_dict = {
 	'1': 'Brett',
@@ -20,7 +20,7 @@ teams_dict = {
 	'10': 'Mark'
 }
 
-stats = [line.strip() for line in open('data/results-week4.csv')][1:]
+stats = [line.strip() for line in open('data/2013/results-week16.csv')][1:]
 
 team_stats_dict = {}
 player_stats_dict = {}
@@ -32,34 +32,31 @@ for row in stats:
 	team = cols[0]
 	week = cols[1]
 	name = cols[2]
-	nflteam = cols[3]
-	position = cols[4]
-	score = float(cols[5])
-	started = cols[6] == 'true'
-	key = name + nflteam
+	position = cols[3]
+	score = float(cols[4])
+	started = cols[5] == 'true'
+	key = name
 
 	if team not in team_stats_dict:
 		team_stats_dict[team] = {}
 
-	if key not in team_stats_dict[team]:
-		player_dict = {}
-		player_dict['score'] = 0
-		player_dict['starts'] = 0
-		player_dict['name'] = name
-		player_dict['nflteam'] = nflteam
-		player_dict['position'] = position
-		team_stats_dict[team][key] = player_dict
-
-	if key not in player_stats_dict:
-		player_dict = {}
-		player_dict['score'] = 0
-		player_dict['starts'] = 0
-		player_dict['name'] = name
-		player_dict['nflteam'] = nflteam
-		player_dict['position'] = position
-		player_stats_dict[key] = player_dict
-
 	if started:
+		if key not in team_stats_dict[team]:
+			player_dict = {}
+			player_dict['score'] = 0
+			player_dict['starts'] = 0
+			player_dict['name'] = name
+			player_dict['position'] = position
+			team_stats_dict[team][key] = player_dict
+
+		if key not in player_stats_dict:
+			player_dict = {}
+			player_dict['score'] = 0
+			player_dict['starts'] = 0
+			player_dict['name'] = name
+			player_dict['position'] = position
+			player_stats_dict[key] = player_dict
+
 		team_stats_dict[team][key]['score'] += score
 		team_stats_dict[team][key]['starts'] += 1
 
