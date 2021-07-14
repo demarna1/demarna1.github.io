@@ -1,3 +1,5 @@
+import sys
+
 def print_mvp_scores(list_name, players, position_averages):
 	for player in players:
 		player['mvpscore'] = player['score'] - position_averages[player['position']]*player['starts']
@@ -20,7 +22,11 @@ teams_dict = {
 	'10': 'Mark'
 }
 
-stats = [line.strip() for line in open('data/results-week4.csv')][1:]
+if len(sys.argv) != 2:
+	print 'Usage: python stats.py <data/results.csv>'
+	sys.exit(1)
+
+stats = [line.strip() for line in open(sys.argv[1])][1:]
 
 team_stats_dict = {}
 player_stats_dict = {}

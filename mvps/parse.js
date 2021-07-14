@@ -3,7 +3,7 @@ var fs = require('fs');
 
 console.log('team,week,name,nflteam,position,score,started');
 for (var team=1; team<=10; team++) {
-    for (var week=1; week<=4; week++) {
+    for (var week=1; week<=13; week++) {
         var $ = cheerio.load(fs.readFileSync('./html/team' + team + '_week' + week + '.html'));
 
         $rows = $('.Datatable tr');
