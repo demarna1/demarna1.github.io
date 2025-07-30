@@ -344,76 +344,76 @@ class FantasyLeagueDashboard {
         // Individual season data for 2013-2024
         this.seasonData = {
             '2024': [
-                { rank: 1, teamName: "Team Kertsmar", record: "11-3-0", pointsFor: 1804.74, pointsAgainst: 1550.1, playoff: true },
-                { rank: 2, teamName: "Dynasty Dreaming", record: "9-5-0", pointsFor: 1852.86, pointsAgainst: 1647.18, playoff: true },
-                { rank: 3, teamName: "Billy432", record: "10-4-0", pointsFor: 1947.34, pointsAgainst: 1670.22, playoff: true },
-                { rank: 4, teamName: "Daniels' Team of Destiny", record: "11-3-0", pointsFor: 1812.4, pointsAgainst: 1585.38, playoff: true },
-                { rank: 5, teamName: "morrich13", record: "8-6-0", pointsFor: 1767.28, pointsAgainst: 1696.02, playoff: true },
-                { rank: 6, teamName: "Spider 2 Y Banana", record: "7-7-0", pointsFor: 1508.3, pointsAgainst: 1614.64, playoff: true },
-                { rank: 7, teamName: "Asstronaut", record: "6-8-0", pointsFor: 1595.4, pointsAgainst: 1701.06, playoff: false },
-                { rank: 8, teamName: "PlayBoys", record: "4-10-0", pointsFor: 1634.22, pointsAgainst: 1734.68, playoff: false },
-                { rank: 9, teamName: "Ryan's Team", record: "4-10-0", pointsFor: 1465.56, pointsAgainst: 1629.86, playoff: false },
-                { rank: 10, teamName: "Basically a bye week", record: "0-14-0", pointsFor: 1246.0, pointsAgainst: 1804.96, playoff: false }
+                { rank: 1, teamName: "Team Kertsmar", manager: "Ryan Jones", record: "11-3-0", pointsFor: 1804.74, pointsAgainst: 1550.1, playoff: true },
+                { rank: 2, teamName: "Dynasty Dreaming", manager: "Chris Gramley", record: "9-5-0", pointsFor: 1852.86, pointsAgainst: 1647.18, playoff: true },
+                { rank: 3, teamName: "Billy432", manager: "Billy Cauley", record: "10-4-0", pointsFor: 1947.34, pointsAgainst: 1670.22, playoff: true },
+                { rank: 4, teamName: "Daniels' Team of Destiny", manager: "Ben Gingold", record: "11-3-0", pointsFor: 1812.4, pointsAgainst: 1585.38, playoff: true },
+                { rank: 5, teamName: "morrich13", manager: "Richie Morris", record: "8-6-0", pointsFor: 1767.28, pointsAgainst: 1696.02, playoff: true },
+                { rank: 6, teamName: "Spider 2 Y Banana", manager: "Joe Kertsmar", record: "7-7-0", pointsFor: 1508.3, pointsAgainst: 1614.64, playoff: true },
+                { rank: 7, teamName: "Asstronaut", manager: "Noah DeMarco", record: "6-8-0", pointsFor: 1595.4, pointsAgainst: 1701.06, playoff: false },
+                { rank: 8, teamName: "PlayBoys", manager: "John Adam Benson", record: "4-10-0", pointsFor: 1634.22, pointsAgainst: 1734.68, playoff: false },
+                { rank: 9, teamName: "Ryan's Team", manager: "Seth Sauder", record: "4-10-0", pointsFor: 1465.56, pointsAgainst: 1629.86, playoff: false },
+                { rank: 10, teamName: "Basically a bye week", manager: "Rob Murray", record: "0-14-0", pointsFor: 1246.0, pointsAgainst: 1804.96, playoff: false }
             ],
             '2023': [
-                { rank: 1, teamName: "Spider 2 Y Banana", record: "9-5-0", pointsFor: 1870.72, pointsAgainst: 1612.7, playoff: true },
-                { rank: 2, teamName: "PlayBoys", record: "8-6-0", pointsFor: 1777.46, pointsAgainst: 1734.78, playoff: true },
-                { rank: 3, teamName: "Micro Bulk LLC", record: "9-5-0", pointsFor: 1819.4, pointsAgainst: 1648.68, playoff: true },
-                { rank: 4, teamName: "Dynasty Dreaming", record: "12-2-0", pointsFor: 1848.52, pointsAgainst: 1554.5, playoff: true },
-                { rank: 5, teamName: "Billy432", record: "8-6-0", pointsFor: 1703.5, pointsAgainst: 1686.28, playoff: true },
-                { rank: 6, teamName: "morrich13", record: "8-6-0", pointsFor: 1641.56, pointsAgainst: 1593.08, playoff: true },
-                { rank: 7, teamName: "NYJ Super Bowl 58 Champs", record: "6-8-0", pointsFor: 1620.64, pointsAgainst: 1701.14, playoff: false },
-                { rank: 8, teamName: "RobMurray1990", record: "5-9-0", pointsFor: 1487.6, pointsAgainst: 1811.4, playoff: false },
-                { rank: 9, teamName: "Justice for Dom", record: "4-10-0", pointsFor: 1499.3, pointsAgainst: 1602.18, playoff: false },
-                { rank: 10, teamName: "Asstronaut", record: "1-13-0", pointsFor: 1356.22, pointsAgainst: 1680.18, playoff: false }
+                { rank: 1, teamName: "Spider 2 Y Banana", manager: "Joe Kertsmar", record: "9-5-0", pointsFor: 1870.72, pointsAgainst: 1612.7, playoff: true },
+                { rank: 2, teamName: "PlayBoys", manager: "John Adam Benson", record: "8-6-0", pointsFor: 1777.46, pointsAgainst: 1734.78, playoff: true },
+                { rank: 3, teamName: "Micro Bulk LLC", manager: "Ryan Jones", record: "9-5-0", pointsFor: 1819.4, pointsAgainst: 1648.68, playoff: true },
+                { rank: 4, teamName: "Dynasty Dreaming", manager: "Chris Gramley", record: "12-2-0", pointsFor: 1848.52, pointsAgainst: 1554.5, playoff: true },
+                { rank: 5, teamName: "Billy432", manager: "Billy Cauley", record: "8-6-0", pointsFor: 1703.5, pointsAgainst: 1686.28, playoff: true },
+                { rank: 6, teamName: "morrich13", manager: "Richie Morris", record: "8-6-0", pointsFor: 1641.56, pointsAgainst: 1593.08, playoff: true },
+                { rank: 7, teamName: "NYJ Super Bowl 58 Champs", manager: "Ben Gingold", record: "6-8-0", pointsFor: 1620.64, pointsAgainst: 1701.14, playoff: false },
+                { rank: 8, teamName: "RobMurray1990", manager: "Rob Murray", record: "5-9-0", pointsFor: 1487.6, pointsAgainst: 1811.4, playoff: false },
+                { rank: 9, teamName: "Justice for Dom", manager: "Seth Sauder", record: "4-10-0", pointsFor: 1499.3, pointsAgainst: 1602.18, playoff: false },
+                { rank: 10, teamName: "Asstronaut", manager: "Noah DeMarco", record: "1-13-0", pointsFor: 1356.22, pointsAgainst: 1680.18, playoff: false }
             ],
             '2022': [
-                { rank: 1, teamName: "Hazed and Confused", record: "11-4-0", pointsFor: 2126.21, pointsAgainst: 1779.70, playoff: true },
-                { rank: 2, teamName: "PlayBoys", record: "14-1-0", pointsFor: 2016.20, pointsAgainst: 1569.41, playoff: true },
-                { rank: 3, teamName: "Spider 2 Y Banana", record: "8-7-0", pointsFor: 1785.42, pointsAgainst: 1778.82, playoff: true },
-                { rank: 4, teamName: "Team IR", record: "10-5-0", pointsFor: 1955.64, pointsAgainst: 1830.14, playoff: true },
-                { rank: 5, teamName: "The CeeDee Players", record: "7-8-0", pointsFor: 1551.94, pointsAgainst: 1688.51, playoff: false },
-                { rank: 6, teamName: "Fresh Prince Helaire", record: "7-8-0", pointsFor: 1734.08, pointsAgainst: 1775.45, playoff: false },
-                { rank: 7, teamName: "Cooper Troopers", record: "6-9-0", pointsFor: 1636.88, pointsAgainst: 1711.10, playoff: false },
-                { rank: 8, teamName: "Suspension == IR", record: "4-11-0", pointsFor: 1703.47, pointsAgainst: 1899.71, playoff: false },
-                { rank: 9, teamName: "Mr. Big Chest", record: "4-11-0", pointsFor: 1670.96, pointsAgainst: 1960.44, playoff: false },
-                { rank: 10, teamName: "Ciroc Boys", record: "4-11-0", pointsFor: 1619.68, pointsAgainst: 1807.20, playoff: false }
+                { rank: 1, teamName: "Hazed and Confused", manager: "Chris Gramley", record: "11-4-0", pointsFor: 2126.21, pointsAgainst: 1779.70, playoff: true },
+                { rank: 2, teamName: "PlayBoys", manager: "John Adam Benson", record: "14-1-0", pointsFor: 2016.20, pointsAgainst: 1569.41, playoff: true },
+                { rank: 3, teamName: "Spider 2 Y Banana", manager: "Joe Kertsmar", record: "8-7-0", pointsFor: 1785.42, pointsAgainst: 1778.82, playoff: true },
+                { rank: 4, teamName: "Team IR", manager: "Danny Boileau", record: "10-5-0", pointsFor: 1955.64, pointsAgainst: 1830.14, playoff: true },
+                { rank: 5, teamName: "The CeeDee Players", manager: "Ben Gingold", record: "7-8-0", pointsFor: 1551.94, pointsAgainst: 1688.51, playoff: false },
+                { rank: 6, teamName: "Fresh Prince Helaire", manager: "Ryan Jones", record: "7-8-0", pointsFor: 1734.08, pointsAgainst: 1775.45, playoff: false },
+                { rank: 7, teamName: "Cooper Troopers", manager: "Rob Murray", record: "6-9-0", pointsFor: 1636.88, pointsAgainst: 1711.10, playoff: false },
+                { rank: 8, teamName: "Suspension == IR", manager: "Danny Boileau", record: "4-11-0", pointsFor: 1703.47, pointsAgainst: 1899.71, playoff: false },
+                { rank: 9, teamName: "Mr. Big Chest", manager: "Noah DeMarco", record: "4-11-0", pointsFor: 1670.96, pointsAgainst: 1960.44, playoff: false },
+                { rank: 10, teamName: "Ciroc Boys", manager: "Richie Morris", record: "4-11-0", pointsFor: 1619.68, pointsAgainst: 1807.20, playoff: false }
             ],
             '2021': [
-                { rank: 1, teamName: "Fresh Prince Helaire", record: "12-3-0", pointsFor: 2157.28, pointsAgainst: 1772.81, playoff: true },
-                { rank: 2, teamName: "Suk 4 Saquan", record: "10-5-0", pointsFor: 1861.80, pointsAgainst: 1666.34, playoff: true },
-                { rank: 3, teamName: "Hazed and Confused", record: "9-6-0", pointsFor: 2116.16, pointsAgainst: 1879.19, playoff: true },
-                { rank: 4, teamName: "Ciroc Boys", record: "8-7-0", pointsFor: 1859.82, pointsAgainst: 1757.83, playoff: true },
-                { rank: 5, teamName: "Mr. Big Chest", record: "8-7-0", pointsFor: 1792.06, pointsAgainst: 1807.97, playoff: false },
-                { rank: 6, teamName: "Spider 2 Y Banana", record: "7-8-0", pointsFor: 1703.61, pointsAgainst: 1846.34, playoff: false },
-                { rank: 7, teamName: "The CeeDee Players", record: "7-8-0", pointsFor: 1690.54, pointsAgainst: 1786.14, playoff: false },
-                { rank: 8, teamName: "Team IR", record: "5-10-0", pointsFor: 1656.06, pointsAgainst: 1804.31, playoff: false },
-                { rank: 9, teamName: "Cooper Troopers", record: "5-10-0", pointsFor: 1547.59, pointsAgainst: 1844.96, playoff: false },
-                { rank: 10, teamName: "Outta Luck", record: "4-11-0", pointsFor: 1562.31, pointsAgainst: 1781.34, playoff: false }
+                { rank: 1, teamName: "Fresh Prince Helaire", manager: "Ryan Jones", record: "12-3-0", pointsFor: 2157.28, pointsAgainst: 1772.81, playoff: true },
+                { rank: 2, teamName: "Suk 4 Saquan", manager: "John Adam Benson", record: "10-5-0", pointsFor: 1861.80, pointsAgainst: 1666.34, playoff: true },
+                { rank: 3, teamName: "Hazed and Confused", manager: "Chris Gramley", record: "9-6-0", pointsFor: 2116.16, pointsAgainst: 1879.19, playoff: true },
+                { rank: 4, teamName: "Ciroc Boys", manager: "Richie Morris", record: "8-7-0", pointsFor: 1859.82, pointsAgainst: 1757.83, playoff: true },
+                { rank: 5, teamName: "Mr. Big Chest", manager: "Noah DeMarco", record: "8-7-0", pointsFor: 1792.06, pointsAgainst: 1807.97, playoff: false },
+                { rank: 6, teamName: "Spider 2 Y Banana", manager: "Joe Kertsmar", record: "7-8-0", pointsFor: 1703.61, pointsAgainst: 1846.34, playoff: false },
+                { rank: 7, teamName: "The CeeDee Players", manager: "Ben Gingold", record: "7-8-0", pointsFor: 1690.54, pointsAgainst: 1786.14, playoff: false },
+                { rank: 8, teamName: "Team IR", manager: "Danny Boileau", record: "5-10-0", pointsFor: 1656.06, pointsAgainst: 1804.31, playoff: false },
+                { rank: 9, teamName: "Cooper Troopers", manager: "Rob Murray", record: "5-10-0", pointsFor: 1547.59, pointsAgainst: 1844.96, playoff: false },
+                { rank: 10, teamName: "Outta Luck", manager: "Billy Cauley", record: "4-11-0", pointsFor: 1562.31, pointsAgainst: 1781.34, playoff: false }
             ],
             '2020': [
-                { rank: 1, teamName: "Suk 4 Saquan", record: "11-3-0", pointsFor: 1767.35, pointsAgainst: 1522.99, playoff: true },
-                { rank: 2, teamName: "Ciroc Boys", record: "9-5-0", pointsFor: 1732.05, pointsAgainst: 1651.60, playoff: true },
-                { rank: 3, teamName: "Spider 2 Y Banana", record: "10-4-0", pointsFor: 1724.44, pointsAgainst: 1463.23, playoff: true },
-                { rank: 4, teamName: "Cooper Troopers", record: "8-6-0", pointsFor: 1722.45, pointsAgainst: 1642.44, playoff: true },
-                { rank: 5, teamName: "Hazed and Confused", record: "7-7-0", pointsFor: 1970.31, pointsAgainst: 1712.35, playoff: false },
-                { rank: 6, teamName: "Fresh Prince Helaire", record: "5-9-0", pointsFor: 1622.13, pointsAgainst: 1704.93, playoff: false },
-                { rank: 7, teamName: "Team IR", record: "6-8-0", pointsFor: 1707.94, pointsAgainst: 1801.28, playoff: false },
-                { rank: 8, teamName: "Mr. Big Chest", record: "5-9-0", pointsFor: 1512.65, pointsAgainst: 1694.93, playoff: false },
-                { rank: 9, teamName: "Outta Luck", record: "5-9-0", pointsFor: 1370.93, pointsAgainst: 1724.40, playoff: false },
-                { rank: 10, teamName: "The CeeDee Players", record: "4-10-0", pointsFor: 1557.02, pointsAgainst: 1769.12, playoff: false }
+                { rank: 1, teamName: "Suk 4 Saquan", manager: "John Adam Benson", record: "11-3-0", pointsFor: 1767.35, pointsAgainst: 1522.99, playoff: true },
+                { rank: 2, teamName: "Ciroc Boys", manager: "Richie Morris", record: "9-5-0", pointsFor: 1732.05, pointsAgainst: 1651.60, playoff: true },
+                { rank: 3, teamName: "Spider 2 Y Banana", manager: "Joe Kertsmar", record: "10-4-0", pointsFor: 1724.44, pointsAgainst: 1463.23, playoff: true },
+                { rank: 4, teamName: "Cooper Troopers", manager: "Rob Murray", record: "8-6-0", pointsFor: 1722.45, pointsAgainst: 1642.44, playoff: true },
+                { rank: 5, teamName: "Hazed and Confused", manager: "Chris Gramley", record: "7-7-0", pointsFor: 1970.31, pointsAgainst: 1712.35, playoff: false },
+                { rank: 6, teamName: "Fresh Prince Helaire", manager: "Ryan Jones", record: "5-9-0", pointsFor: 1622.13, pointsAgainst: 1704.93, playoff: false },
+                { rank: 7, teamName: "Team IR", manager: "Danny Boileau", record: "6-8-0", pointsFor: 1707.94, pointsAgainst: 1801.28, playoff: false },
+                { rank: 8, teamName: "Mr. Big Chest", manager: "Noah DeMarco", record: "5-9-0", pointsFor: 1512.65, pointsAgainst: 1694.93, playoff: false },
+                { rank: 9, teamName: "Outta Luck", manager: "Billy Cauley", record: "5-9-0", pointsFor: 1370.93, pointsAgainst: 1724.40, playoff: false },
+                { rank: 10, teamName: "The CeeDee Players", manager: "Ben Gingold", record: "4-10-0", pointsFor: 1557.02, pointsAgainst: 1769.12, playoff: false }
             ],
             '2019': [
-                { rank: 1, teamName: "Suk 4 Saquan", record: "8-6-0", pointsFor: 1731.16, pointsAgainst: 1600.67, playoff: true },
-                { rank: 2, teamName: "Spider 2 Y Banana", record: "9-5-0", pointsFor: 1707.46, pointsAgainst: 1553.51, playoff: true },
-                { rank: 3, teamName: "Mr. Big Chest", record: "7-7-0", pointsFor: 1762.74, pointsAgainst: 1745.65, playoff: true },
-                { rank: 4, teamName: "Cooper Troopers", record: "7-7-0", pointsFor: 1773.41, pointsAgainst: 1786.04, playoff: true },
-                { rank: 5, teamName: "Failed to fail for27", record: "6-8-0", pointsFor: 1695.18, pointsAgainst: 1634.98, playoff: false },
-                { rank: 6, teamName: "Team Gingold", record: "7-7-0", pointsFor: 1557.36, pointsAgainst: 1606.61, playoff: false },
-                { rank: 7, teamName: "Ciroc Boys", record: "7-7-0", pointsFor: 1632.52, pointsAgainst: 1642.96, playoff: false },
-                { rank: 8, teamName: "Outta Luck", record: "7-7-0", pointsFor: 1582.56, pointsAgainst: 1613.30, playoff: false },
-                { rank: 9, teamName: "Hazed and Confused", record: "6-8-0", pointsFor: 1665.72, pointsAgainst: 1759.26, playoff: false },
-                { rank: 10, teamName: "Biggest loser", record: "6-8-0", pointsFor: 1596.34, pointsAgainst: 1761.47, playoff: false }
+                { rank: 1, teamName: "Suk 4 Saquan", manager: "John Adam Benson", record: "8-6-0", pointsFor: 1731.16, pointsAgainst: 1600.67, playoff: true },
+                { rank: 2, teamName: "Spider 2 Y Banana", manager: "Joe Kertsmar", record: "9-5-0", pointsFor: 1707.46, pointsAgainst: 1553.51, playoff: true },
+                { rank: 3, teamName: "Mr. Big Chest", manager: "Noah DeMarco", record: "7-7-0", pointsFor: 1762.74, pointsAgainst: 1745.65, playoff: true },
+                { rank: 4, teamName: "Cooper Troopers", manager: "Rob Murray", record: "7-7-0", pointsFor: 1773.41, pointsAgainst: 1786.04, playoff: true },
+                { rank: 5, teamName: "Failed to fail for27", manager: "Danny Boileau", record: "6-8-0", pointsFor: 1695.18, pointsAgainst: 1634.98, playoff: false },
+                { rank: 6, teamName: "Team Gingold", manager: "Ben Gingold", record: "7-7-0", pointsFor: 1557.36, pointsAgainst: 1606.61, playoff: false },
+                { rank: 7, teamName: "Ciroc Boys", manager: "Richie Morris", record: "7-7-0", pointsFor: 1632.52, pointsAgainst: 1642.96, playoff: false },
+                { rank: 8, teamName: "Outta Luck", manager: "Billy Cauley", record: "7-7-0", pointsFor: 1582.56, pointsAgainst: 1613.30, playoff: false },
+                { rank: 9, teamName: "Hazed and Confused", manager: "Chris Gramley", record: "6-8-0", pointsFor: 1665.72, pointsAgainst: 1759.26, playoff: false },
+                { rank: 10, teamName: "Biggest loser", manager: "Ryan Jones", record: "6-8-0", pointsFor: 1596.34, pointsAgainst: 1761.47, playoff: false }
             ],
             '2018': [
                 { rank: 1, teamName: "Hazed and Confused", record: "10-4-0", pointsFor: 1976.02, pointsAgainst: 1703.92, playoff: true },
@@ -532,6 +532,7 @@ class FantasyLeagueDashboard {
             row.innerHTML = `
                 <td>${team.rank}</td>
                 <td>${team.teamName}</td>
+                <td>${team.manager ? team.manager : ''}</td>
                 <td>${team.record}</td>
                 <td>${team.pointsFor.toFixed(2)}</td>
                 <td>${team.pointsAgainst.toFixed(2)}</td>
