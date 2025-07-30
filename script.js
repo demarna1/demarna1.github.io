@@ -39,9 +39,19 @@ class FantasyLeagueDashboard {
             header.classList.remove('sort-asc', 'sort-desc');
         });
         
-        // Determine sort direction
+        // Determine sort direction - default to descending except for manager name
         const currentHeader = document.querySelector(`[data-sort="${sortField}"]`);
-        const isAscending = !currentHeader.classList.contains('sort-asc');
+        const isCurrentlyAscending = currentHeader.classList.contains('sort-asc');
+        const isCurrentlyDescending = currentHeader.classList.contains('sort-desc');
+        
+        let isAscending;
+        if (sortField === 'manager') {
+            // Manager defaults to ascending (alphabetical)
+            isAscending = !isCurrentlyAscending;
+        } else {
+            // All other columns default to descending
+            isAscending = isCurrentlyDescending;
+        }
         
         // Add sort indicator
         currentHeader.classList.add(isAscending ? 'sort-asc' : 'sort-desc');
