@@ -15,10 +15,95 @@ class FantasyLeagueDashboard {
     }
 
     setupEventListeners() {
-        // Add any event listeners here if needed
         document.addEventListener('DOMContentLoaded', () => {
             this.init();
+            this.setupSorting();
         });
+    }
+
+    setupSorting() {
+        const sortableHeaders = document.querySelectorAll('.sortable');
+        sortableHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const sortField = header.getAttribute('data-sort');
+                this.sortData(sortField);
+            });
+        });
+    }
+
+    sortData(sortField) {
+        const sortableHeaders = document.querySelectorAll('.sortable');
+        
+        // Remove existing sort indicators
+        sortableHeaders.forEach(header => {
+            header.classList.remove('sort-asc', 'sort-desc');
+        });
+        
+        // Determine sort direction
+        const currentHeader = document.querySelector(`[data-sort="${sortField}"]`);
+        const isAscending = !currentHeader.classList.contains('sort-asc');
+        
+        // Add sort indicator
+        currentHeader.classList.add(isAscending ? 'sort-asc' : 'sort-desc');
+        
+        // Sort the data
+        this.leagueData.sort((a, b) => {
+            let aVal, bVal;
+            
+            switch(sortField) {
+                case 'rank':
+                    aVal = a.rank;
+                    bVal = b.rank;
+                    break;
+                case 'manager':
+                    aVal = a.manager.toLowerCase();
+                    bVal = b.manager.toLowerCase();
+                    break;
+                case 'record':
+                    aVal = a.totalWins;
+                    bVal = b.totalWins;
+                    break;
+                case 'winPercentage':
+                    aVal = parseFloat(a.winPercentage);
+                    bVal = parseFloat(b.winPercentage);
+                    break;
+                case 'playoffAppearances':
+                    aVal = a.playoffAppearances;
+                    bVal = b.playoffAppearances;
+                    break;
+                case 'gold':
+                    aVal = a.gold;
+                    bVal = b.gold;
+                    break;
+                case 'silver':
+                    aVal = a.silver;
+                    bVal = b.silver;
+                    break;
+                case 'bronze':
+                    aVal = a.bronze;
+                    bVal = b.bronze;
+                    break;
+                case 'totalMedals':
+                    aVal = a.totalMedals;
+                    bVal = b.totalMedals;
+                    break;
+                default:
+                    aVal = a.rank;
+                    bVal = b.rank;
+            }
+            
+            if (aVal < bVal) return isAscending ? -1 : 1;
+            if (aVal > bVal) return isAscending ? 1 : -1;
+            return 0;
+        });
+        
+        // Update ranks after sorting
+        this.leagueData.forEach((team, index) => {
+            team.rank = index + 1;
+        });
+        
+        // Re-render the table
+        this.renderTable();
     }
 
     loadData() {
@@ -37,7 +122,9 @@ class FantasyLeagueDashboard {
                 silver: 1,
                 bronze: 1,
                 bestFinish: 1,
-                avgPointsPerGame: 1820.85
+                avgPointsPerGame: 1820.85,
+                winPercentage: 0,
+                totalMedals: 0
             },
             {
                 manager: "Joe Kertsmar",
@@ -205,6 +292,13 @@ class FantasyLeagueDashboard {
                 avgPointsPerGame: 1499.30
             }
         ];
+        
+        // Calculate win percentage and total medals for all teams
+        this.leagueData.forEach(team => {
+            const totalGames = team.totalWins + team.totalLosses + team.totalTies;
+            team.winPercentage = totalGames > 0 ? (team.totalWins / totalGames * 100).toFixed(1) : 0;
+            team.totalMedals = team.gold + team.silver + team.bronze;
+        });
         
         // Sort by total wins (descending)
         this.leagueData.sort((a, b) => b.totalWins - a.totalWins);
@@ -429,7 +523,7 @@ class FantasyLeagueDashboard {
         document.getElementById('avg-points').textContent = avgPoints.toFixed(1);
     }
 
-    renderTable() {
+        renderTable() {
         const tableBody = document.getElementById('league-table-body');
         tableBody.innerHTML = '';
 
@@ -437,21 +531,21 @@ class FantasyLeagueDashboard {
             return;
         }
 
-                        this.leagueData.forEach((team, index) => {
-                    const row = document.createElement('tr');
-                    row.innerHTML = `
-                        <td>${team.rank}</td>
-                        <td>${team.manager}</td>
-                        <td>${team.totalWins}-${team.totalLosses}-${team.totalTies}</td>
-                        <td>${team.totalPointsFor.toFixed(2)}</td>
-                        <td>${team.playoffAppearances}</td>
-                        <td>${team.gold}</td>
-                        <td>${team.silver}</td>
-                        <td>${team.bronze}</td>
-                        <td>${team.bestFinish}</td>
-                    `;
-                    tableBody.appendChild(row);
-                });
+        this.leagueData.forEach((team, index) => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${team.rank}</td>
+                <td>${team.manager}</td>
+                <td>${team.totalWins}-${team.totalLosses}-${team.totalTies}</td>
+                <td>${team.winPercentage}%</td>
+                <td>${team.playoffAppearances}</td>
+                <td>${team.gold}</td>
+                <td>${team.silver}</td>
+                <td>${team.bronze}</td>
+                <td>${team.totalMedals}</td>
+            `;
+            tableBody.appendChild(row);
+        });
     }
 
     toggleEmptyState() {

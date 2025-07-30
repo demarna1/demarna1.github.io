@@ -319,6 +319,40 @@ body::before {
     border-bottom: none;
 }
 
+/* Sortable headers */
+.sortable {
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+}
+
+.sortable:hover {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.sortable::after {
+    content: '↕';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+.sortable.sort-asc::after {
+    content: '↑';
+    opacity: 1;
+    color: #ffd700;
+}
+
+.sortable.sort-desc::after {
+    content: '↓';
+    opacity: 1;
+    color: #ffd700;
+}
+
 /* Rank column */
 .league-table th:first-child,
 .league-table td:first-child {
@@ -335,12 +369,12 @@ body::before {
     color: #dc3545;
 }
 
-/* Total Points For column */
+/* Win Percentage column */
 .league-table th:nth-child(4),
 .league-table td:nth-child(4) {
     text-align: center;
     font-weight: 600;
-    color: #fd7e14;
+    color: #28a745;
 }
 
 /* Playoff Appearances column */
@@ -375,12 +409,12 @@ body::before {
     color: #cd7f32;
 }
 
-/* Best Finish column */
+/* Total Medals column */
 .league-table th:nth-child(9),
 .league-table td:nth-child(9) {
     text-align: center;
     font-weight: 600;
-    color: #28a745;
+    color: #6f42c1;
 }
 
 /* Playoff team styling */
