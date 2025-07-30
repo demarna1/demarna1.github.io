@@ -1,9 +1,0 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-*.swp
-.DS_Store
-mvps/html
-node_modules
