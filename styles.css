@@ -62,10 +62,22 @@ body::before {
     margin-bottom: 20px;
 }
 
+/* Photos Container Styles */
+.photos-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
 /* League Photo Styles */
 .league-photo {
-    margin: 30px 0;
     text-align: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
 }
 
 .league-image {
@@ -76,6 +88,37 @@ body::before {
     border: 3px solid #ffd700;
     max-height: 400px;
     object-fit: cover;
+}
+
+/* Trophy Photo Styles */
+.trophy-photo {
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.trophy-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 3px solid #ffd700;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.trophy-caption {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffd700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+    display: inline-block;
 }
 
 .football-decoration {
@@ -352,8 +395,25 @@ body::before {
         font-size: 2rem;
     }
     
-    .league-image {
+    .photos-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .league-photo,
+    .trophy-photo {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .league-image,
+    .trophy-image {
         max-height: 300px;
+    }
+    
+    .trophy-caption {
+        font-size: 1rem;
+        padding: 8px 16px;
     }
     
     .card-header {
