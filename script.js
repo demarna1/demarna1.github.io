@@ -123,212 +123,92 @@ class FantasyLeagueDashboard {
     }
 
     loadData() {
-        // Combined 2013-2024 Fantasy Football League Data - Grouped by Manager
-        this.leagueData = [
-            {
-                manager: "Chris Gramley",
-                teamName: "Dynasty Dreaming",
-                totalWins: 92,
-                totalLosses: 64,
-                totalTies: 0,
-                totalPointsFor: 20069.99,
-                totalPointsAgainst: 18482.47,
-                playoffAppearances: 8,
-                gold: 3,
-                silver: 1,
-                bronze: 1,
-                bestFinish: 1,
-                avgPointsPerGame: 1820.85,
-                winPercentage: 0,
-                totalMedals: 0
-            },
-            {
-                manager: "Joe Kertsmar",
-                teamName: "Spider 2 Y Banana",
-                totalWins: 83,
-                totalLosses: 85,
-                totalTies: 0,
-                totalPointsFor: 19802.78,
-                totalPointsAgainst: 19946.36,
-                playoffAppearances: 7,
-                gold: 1,
-                silver: 1,
-                bronze: 2,
-                bestFinish: 1,
-                avgPointsPerGame: 1654.04
-            },
-            {
-                manager: "Richie Morris",
-                teamName: "morrich13",
-                totalWins: 83,
-                totalLosses: 85,
-                totalTies: 0,
-                totalPointsFor: 19890.53,
-                totalPointsAgainst: 20072.36,
-                playoffAppearances: 6,
-                gold: 0,
-                silver: 1,
-                bronze: 0,
-                bestFinish: 2,
-                avgPointsPerGame: 1647.57
-            },
-            {
-                manager: "John Adam Benson",
-                teamName: "PlayBoys",
-                totalWins: 71,
-                totalLosses: 57,
-                totalTies: 0,
-                totalPointsFor: 14758.96,
-                totalPointsAgainst: 13902.31,
-                playoffAppearances: 6,
-                gold: 2,
-                silver: 2,
-                bronze: 1,
-                bestFinish: 1,
-                avgPointsPerGame: 1860.68
-            },
-            {
-                manager: "Rob Murray",
-                teamName: "Basically a bye week",
-                totalWins: 52,
-                totalLosses: 76,
-                totalTies: 0,
-                totalPointsFor: 12986.28,
-                totalPointsAgainst: 14433.53,
-                playoffAppearances: 4,
-                gold: 0,
-                silver: 0,
-                bronze: 1,
-                bestFinish: 3,
-                avgPointsPerGame: 1708.78
-            },
-            {
-                manager: "Noah DeMarco",
-                teamName: "Asstronaut",
-                totalWins: 87,
-                totalLosses: 66,
-                totalTies: 0,
-                totalPointsFor: 18240.50,
-                totalPointsAgainst: 16958.10,
-                playoffAppearances: 9,
-                gold: 3,
-                silver: 1,
-                bronze: 1,
-                bestFinish: 1,
-                avgPointsPerGame: 1830.31
-            },
-            {
-                manager: "Ryan Jones",
-                teamName: "Team Kertsmar",
-                totalWins: 86,
-                totalLosses: 62,
-                totalTies: 0,
-                totalPointsFor: 17626.37,
-                totalPointsAgainst: 16743.36,
-                playoffAppearances: 5,
-                gold: 2,
-                silver: 0,
-                bronze: 1,
-                bestFinish: 1,
-                avgPointsPerGame: 1750.28
-            },
-            {
-                manager: "Danny Boileau",
-                teamName: "Team IR",
-                totalWins: 47,
-                totalLosses: 53,
-                totalTies: 0,
-                totalPointsFor: 9708.30,
-                totalPointsAgainst: 10088.87,
-                playoffAppearances: 1,
-                gold: 0,
-                silver: 1,
-                bronze: 0,
-                bestFinish: 2,
-                avgPointsPerGame: 1618.05
-            },
-            {
-                manager: "Billy Cauley",
-                teamName: "Billy432",
-                totalWins: 71,
-                totalLosses: 50,
-                totalTies: 0,
-                totalPointsFor: 14151.45,
-                totalPointsAgainst: 13724.81,
-                playoffAppearances: 6,
-                gold: 0,
-                silver: 1,
-                bronze: 2,
-                bestFinish: 2,
-                avgPointsPerGame: 1750.10
-            },
-            {
-                manager: "Ben Gingold",
-                teamName: "Daniels' Team of Destiny",
-                totalWins: 40,
-                totalLosses: 44,
-                totalTies: 0,
-                totalPointsFor: 9787.90,
-                totalPointsAgainst: 10136.90,
-                playoffAppearances: 1,
-                gold: 0,
-                silver: 0,
-                bronze: 0,
-                bestFinish: 4,
-                avgPointsPerGame: 1588.72
-            },
-            {
-                manager: "Feyi Olugbenga",
-                teamName: "Forte year old virgn",
-                totalWins: 10,
-                totalLosses: 4,
-                totalTies: 0,
-                totalPointsFor: 1823.61,
-                totalPointsAgainst: 1598.82,
-                playoffAppearances: 1,
-                gold: 0,
-                silver: 1,
-                bronze: 0,
-                bestFinish: 2,
-                avgPointsPerGame: 1823.61
-            },
-            {
-                manager: "Alex Falcon",
-                teamName: "Forte year old virgn",
-                totalWins: 34,
-                totalLosses: 22,
-                totalTies: 0,
-                totalPointsFor: 6835.16,
-                totalPointsAgainst: 6445.80,
-                playoffAppearances: 3,
-                gold: 1,
-                silver: 1,
-                bronze: 1,
-                bestFinish: 1,
-                avgPointsPerGame: 1803.95
-            },
-            {
-                manager: "Seth Sauder",
-                teamName: "Ryan's Team",
-                totalWins: 8,
-                totalLosses: 20,
-                totalTies: 0,
-                totalPointsFor: 2964.86,
-                totalPointsAgainst: 3232.04,
-                playoffAppearances: 0,
-                gold: 0,
-                silver: 0,
-                bronze: 0,
-                bestFinish: 9,
-                avgPointsPerGame: 1499.30
-            }
-        ];
+        // Calculate aggregated statistics from seasonal data
+        const managerStats = {};
         
-        // Calculate win percentage and total medals for all teams
-        this.leagueData.forEach(team => {
-            const totalGames = team.totalWins + team.totalLosses + team.totalTies;
-            team.winPercentage = totalGames > 0 ? (team.totalWins / totalGames * 100).toFixed(1) : 0;
-            team.totalMedals = team.gold + team.silver + team.bronze;
+        // Process all seasons
+        Object.keys(this.seasonData).forEach(year => {
+            this.seasonData[year].forEach(team => {
+                const manager = team.manager;
+                if (!managerStats[manager]) {
+                    managerStats[manager] = {
+                        manager: manager,
+                        totalWins: 0,
+                        totalLosses: 0,
+                        totalTies: 0,
+                        totalPointsFor: 0,
+                        totalPointsAgainst: 0,
+                        playoffAppearances: 0,
+                        gold: 0,
+                        silver: 0,
+                        bronze: 0,
+                        bestFinish: 999,
+                        teamNames: new Set()
+                    };
+                }
+                
+                // Parse record (e.g., "11-3-0" -> wins: 11, losses: 3, ties: 0)
+                const [wins, losses, ties] = team.record.split('-').map(Number);
+                managerStats[manager].totalWins += wins;
+                managerStats[manager].totalLosses += losses;
+                managerStats[manager].totalTies += ties;
+                
+                // Add points
+                managerStats[manager].totalPointsFor += team.pointsFor;
+                managerStats[manager].totalPointsAgainst += team.pointsAgainst;
+                
+                // Count playoff appearances
+                if (team.playoff) {
+                    managerStats[manager].playoffAppearances++;
+                }
+                
+                // Count medals based on rank
+                if (team.rank === 1) {
+                    managerStats[manager].gold++;
+                } else if (team.rank === 2) {
+                    managerStats[manager].silver++;
+                } else if (team.rank === 3) {
+                    managerStats[manager].bronze++;
+                }
+                
+                // Track best finish
+                if (team.rank < managerStats[manager].bestFinish) {
+                    managerStats[manager].bestFinish = team.rank;
+                }
+                
+                // Track team names
+                managerStats[manager].teamNames.add(team.teamName);
+            });
+        });
+        
+        // Convert to array and calculate additional stats
+        this.leagueData = Object.values(managerStats).map(stats => {
+            const totalGames = stats.totalWins + stats.totalLosses + stats.totalTies;
+            const winPercentage = totalGames > 0 ? (stats.totalWins / totalGames * 100).toFixed(1) : 0;
+            const totalMedals = stats.gold + stats.silver + stats.bronze;
+            const avgPointsPerGame = totalGames > 0 ? (stats.totalPointsFor / totalGames).toFixed(2) : 0;
+            
+            // Get most recent team name (last one in the set)
+            const teamNames = Array.from(stats.teamNames);
+            const mostRecentTeam = teamNames[teamNames.length - 1];
+            
+            return {
+                manager: stats.manager,
+                teamName: mostRecentTeam,
+                totalWins: stats.totalWins,
+                totalLosses: stats.totalLosses,
+                totalTies: stats.totalTies,
+                totalPointsFor: stats.totalPointsFor,
+                totalPointsAgainst: stats.totalPointsAgainst,
+                playoffAppearances: stats.playoffAppearances,
+                gold: stats.gold,
+                silver: stats.silver,
+                bronze: stats.bronze,
+                bestFinish: stats.bestFinish === 999 ? 0 : stats.bestFinish,
+                avgPointsPerGame: parseFloat(avgPointsPerGame),
+                winPercentage: parseFloat(winPercentage),
+                totalMedals: totalMedals
+            };
         });
         
         // Sort by total medals (descending) by default
