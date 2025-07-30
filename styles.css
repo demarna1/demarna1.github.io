@@ -358,7 +358,17 @@ body::before {
 .league-table td:first-child {
     text-align: center;
     font-weight: 600;
-    width: 80px;
+    width: 60px;
+}
+
+/* Manager column - prevent wrapping */
+.league-table th:nth-child(2),
+.league-table td:nth-child(2) {
+    white-space: nowrap;
+    text-align: left;
+    font-weight: 600;
+    width: 180px;
+    min-width: 180px;
 }
 
 /* Total Record column */
@@ -367,6 +377,7 @@ body::before {
     text-align: center;
     font-weight: 600;
     color: #dc3545;
+    width: 100px;
 }
 
 /* Win Percentage column */
@@ -375,6 +386,7 @@ body::before {
     text-align: center;
     font-weight: 600;
     color: #28a745;
+    width: 80px;
 }
 
 /* Playoff Appearances column */
@@ -383,6 +395,7 @@ body::before {
     text-align: center;
     font-weight: 600;
     color: #007bff;
+    width: 80px;
 }
 
 /* Gold column */
@@ -391,6 +404,7 @@ body::before {
     text-align: center;
     font-weight: 600;
     color: #ffd700;
+    width: 60px;
 }
 
 /* Silver column */
@@ -399,6 +413,7 @@ body::before {
     text-align: center;
     font-weight: 600;
     color: #c0c0c0;
+    width: 60px;
 }
 
 /* Bronze column */
@@ -407,6 +422,7 @@ body::before {
     text-align: center;
     font-weight: 600;
     color: #cd7f32;
+    width: 60px;
 }
 
 /* Total Medals column */
@@ -415,6 +431,7 @@ body::before {
     text-align: center;
     font-weight: 600;
     color: #6f42c1;
+    width: 80px;
 }
 
 /* Playoff team styling */
