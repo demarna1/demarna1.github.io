@@ -5,20 +5,19 @@ class FantasyLeagueDashboard {
         this.leagueData = [];
         this.seasonData = {};
         this.currentSeason = '2022';
-        this.init();
     }
 
     init() {
         this.loadData();
         this.loadSeasonData();
-        this.setupEventListeners();
+        this.renderDashboard();
+        this.setupSeasonSelector();
     }
 
     setupEventListeners() {
         // Add any event listeners here if needed
         document.addEventListener('DOMContentLoaded', () => {
-            this.renderDashboard();
-            this.setupSeasonSelector();
+            this.init();
         });
     }
 
@@ -495,6 +494,7 @@ class FantasyLeagueDashboard {
 
 // Initialize the dashboard
 const dashboard = new FantasyLeagueDashboard();
+dashboard.setupEventListeners();
 
 // Example of how to add data (you can use this format when you provide the data)
 // dashboard.addLeagueData([
