@@ -326,7 +326,6 @@ class FantasyLeagueDashboard {
         team.dynastySpans.forEach((span, index) => {
             message += `Dynasty ${index + 1}: ${span.startYear}-${span.endYear}\n`;
             message += `Total Points: ${span.totalPoints}\n`;
-            message += `Years: ${span.years.join(', ')}\n`;
             message += `Results: ${span.results.map(r => {
                 const medal = r.rank === 1 ? '🥇' : r.rank === 2 ? '🥈' : '🥉';
                 return `${r.year} ${medal}`;
