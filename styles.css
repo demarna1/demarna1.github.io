@@ -12,6 +12,9 @@ body {
     color: #333;
     line-height: 1.6;
     position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation; /* Optimize touch interactions */
 }
 
 body::before {
@@ -245,6 +248,28 @@ body::before {
 .table-container {
     padding: 30px;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #f1f1f1; /* Firefox */
+}
+
+/* Custom scrollbar for webkit browsers */
+.table-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .league-table {
@@ -254,6 +279,7 @@ body::before {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    min-width: 900px; /* Ensure minimum width for readability */
 }
 
 .league-table thead {
@@ -454,18 +480,36 @@ body::before {
     }
     
     .table-container {
-        padding: 15px;
+        padding: 10px;
+        margin: 15px 0;
+        border-radius: 8px;
+    }
+    
+    .league-table {
+        min-width: 800px; /* Slightly smaller for tablets */
+        font-size: 0.85rem;
     }
     
     .league-table th,
     .league-table td {
-        padding: 10px 15px;
-        font-size: 0.9rem;
+        padding: 8px 6px;
+        font-size: 0.75rem;
     }
     
     .league-table th:first-child,
     .league-table td:first-child {
-        width: 60px;
+        width: 40px;
+    }
+
+    /* Add horizontal scroll indicator */
+    .table-container::after {
+        content: '← Scroll →';
+        display: block;
+        text-align: center;
+        color: #666;
+        font-size: 0.8rem;
+        margin-top: 10px;
+        opacity: 0.7;
     }
 }
 
@@ -494,13 +538,32 @@ body::before {
         font-size: 1.3rem;
     }
     
+    .table-container {
+        padding: 8px;
+        margin: 10px 0;
+    }
+    
     .league-table {
-        font-size: 0.8rem;
+        min-width: 700px; /* Smaller for phones */
+        font-size: 0.75rem;
     }
     
     .league-table th,
     .league-table td {
-        padding: 8px 10px;
+        padding: 6px 4px;
+        font-size: 0.65rem;
+    }
+
+    .league-table th:first-child,
+    .league-table td:first-child {
+        width: 35px;
+    }
+
+    /* Enhanced scroll indicator for small screens */
+    .table-container::after {
+        content: '← Swipe to scroll →';
+        font-size: 0.7rem;
+        margin-top: 8px;
     }
 }
 
@@ -628,11 +691,24 @@ body::before {
 @media (max-width: 768px) {
     .season-selector {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
+        align-items: center;
+        gap: 10px;
     }
     
     .season-selector select {
         width: 100%;
+        max-width: 200px;
+        font-size: 0.9rem;
+    }
+
+    .season-table {
+        min-width: 800px;
+        font-size: 0.85rem;
+    }
+
+    .season-table th,
+    .season-table td {
+        padding: 8px 6px;
+        font-size: 0.75rem;
     }
 } 
