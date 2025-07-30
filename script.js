@@ -8,11 +8,8 @@ class FantasyLeagueDashboard {
     }
 
     init() {
-        console.log('Initializing dashboard...');
         this.loadData();
-        console.log('Data loaded, league data length:', this.leagueData.length);
         this.loadSeasonData();
-        console.log('Season data loaded, keys:', Object.keys(this.seasonData));
         this.renderDashboard();
         this.setupSeasonSelector();
     }
@@ -201,8 +198,6 @@ class FantasyLeagueDashboard {
         this.leagueData.forEach((team, index) => {
             team.rank = index + 1;
         });
-        
-        console.log('Data loaded and ranked:', this.leagueData.length, 'teams');
     }
 
     loadSeasonData() {
@@ -332,11 +327,6 @@ class FantasyLeagueDashboard {
     }
 
     renderDashboard() {
-        console.log('Rendering dashboard...');
-        console.log('League data length:', this.leagueData.length);
-        console.log('Season data keys:', Object.keys(this.seasonData));
-        
-        // this.updateStats(); // Commented out since stats-summary div was removed
         this.renderTable();
         this.renderSeasonTable();
         this.toggleEmptyState();
@@ -401,13 +391,10 @@ class FantasyLeagueDashboard {
     }
 
     renderTable() {
-        console.log('Rendering table...');
         const tableBody = document.getElementById('league-table-body');
-        console.log('Table body element:', tableBody);
         tableBody.innerHTML = '';
 
         if (this.leagueData.length === 0) {
-            console.log('No league data to render');
             return;
         }
 
