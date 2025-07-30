@@ -757,4 +757,18 @@ body::before {
         padding: 8px 6px;
         font-size: 0.75rem;
     }
+}
+
+/* Dynasty Icon Styles */
+.dynasty-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+}
+
+.dynasty-icon:hover {
+    transform: scale(1.2);
 } 

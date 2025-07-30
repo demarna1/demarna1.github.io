@@ -143,7 +143,8 @@ class FantasyLeagueDashboard {
                         silver: 0,
                         bronze: 0,
                         bestFinish: 999,
-                        teamNames: new Set()
+                        teamNames: new Set(),
+                        seasonResults: [] // Track individual season results for dynasty calculation
                     };
                 }
                 
@@ -178,15 +179,24 @@ class FantasyLeagueDashboard {
                 
                 // Track team names
                 managerStats[manager].teamNames.add(team.teamName);
+                
+                // Track season results for dynasty calculation
+                managerStats[manager].seasonResults.push({
+                    year: parseInt(year),
+                    rank: team.rank,
+                    points: team.rank === 1 ? 3 : team.rank === 2 ? 2 : team.rank === 3 ? 1 : 0
+                });
             });
         });
         
         // Convert to array and calculate additional stats
         this.leagueData = Object.values(managerStats).map(stats => {
             const totalGames = stats.totalWins + stats.totalLosses + stats.totalTies;
-            const winPercentage = totalGames > 0 ? (stats.totalWins / totalGames * 100).toFixed(1) : 0;
             const totalMedals = stats.gold + stats.silver + stats.bronze;
             const avgPointsPerGame = totalGames > 0 ? (stats.totalPointsFor / totalGames).toFixed(2) : 0;
+            
+            // Calculate dynasty spans
+            const dynastySpans = this.calculateDynastySpans(stats.seasonResults);
             
             // Get most recent team name (last one in the set)
             const teamNames = Array.from(stats.teamNames);
@@ -206,7 +216,9 @@ class FantasyLeagueDashboard {
                 bronze: stats.bronze,
                 bestFinish: stats.bestFinish === 999 ? 0 : stats.bestFinish,
                 avgPointsFor: parseFloat(avgPointsPerGame),
-                totalMedals: totalMedals
+                totalMedals: totalMedals,
+                dynastySpans: dynastySpans,
+                hasDynasty: dynastySpans.length > 0
             };
         });
         
@@ -217,6 +229,61 @@ class FantasyLeagueDashboard {
         this.leagueData.forEach((team, index) => {
             team.rank = index + 1;
         });
+    }
+
+    calculateDynastySpans(seasonResults) {
+        const spans = [];
+        const years = seasonResults.map(r => r.year).sort((a, b) => a - b);
+        
+        // Check each possible 4-year window
+        for (let i = 0; i <= years.length - 4; i++) {
+            const windowYears = years.slice(i, i + 4);
+            let totalPoints = 0;
+            const windowResults = [];
+            
+            // Calculate total points for this 4-year window
+            windowYears.forEach(year => {
+                const result = seasonResults.find(r => r.year === year);
+                if (result) {
+                    totalPoints += result.points;
+                    windowResults.push(result);
+                }
+            });
+            
+            // If total points >= 5, this is a dynasty span
+            if (totalPoints >= 5) {
+                spans.push({
+                    startYear: windowYears[0],
+                    endYear: windowYears[3],
+                    totalPoints: totalPoints,
+                    years: windowYears,
+                    results: windowResults
+                });
+            }
+        }
+        
+        return spans;
+    }
+
+    showDynastySpans(manager) {
+        const team = this.leagueData.find(t => t.manager === manager);
+        if (!team || !team.dynastySpans || team.dynastySpans.length === 0) {
+            alert('No dynasty spans found for this manager.');
+            return;
+        }
+
+        let message = `${manager}'s Dynasty Spans:\n\n`;
+        team.dynastySpans.forEach((span, index) => {
+            message += `Dynasty ${index + 1}: ${span.startYear}-${span.endYear}\n`;
+            message += `Total Points: ${span.totalPoints}\n`;
+            message += `Years: ${span.years.join(', ')}\n`;
+            message += `Results: ${span.results.map(r => {
+                const medal = r.rank === 1 ? '🥇' : r.rank === 2 ? '🥈' : '🥉';
+                return `${r.year} ${medal}`;
+            }).join(', ')}\n\n`;
+        });
+
+        alert(message);
     }
 
     loadSeasonData() {
@@ -444,9 +511,12 @@ class FantasyLeagueDashboard {
 
         this.leagueData.forEach((team, index) => {
             const row = document.createElement('tr');
+            const dynastyIcon = team.hasDynasty ? 
+                `<img src="dynasty.png" alt="Dynasty" class="dynasty-icon" title="Click to view dynasty spans" data-manager="${team.manager}" style="width: 20px; height: 20px; margin-left: 8px; cursor: pointer; vertical-align: middle;">` : '';
+            
             row.innerHTML = `
                 <td>${team.rank}</td>
-                <td>${team.manager}</td>
+                <td>${team.manager}${dynastyIcon}</td>
                 <td>${team.totalWins}-${team.totalLosses}-${team.totalTies}</td>
                 <td>${team.avgPointsFor.toFixed(2)}</td>
                 <td>${team.playoffAppearances}</td>
@@ -456,6 +526,15 @@ class FantasyLeagueDashboard {
                 <td>${team.totalMedals}</td>
             `;
             tableBody.appendChild(row);
+        });
+        
+        // Add click event listeners for dynasty icons
+        document.querySelectorAll('.dynasty-icon').forEach(icon => {
+            icon.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const manager = icon.getAttribute('data-manager');
+                this.showDynastySpans(manager);
+            });
         });
     }
 
