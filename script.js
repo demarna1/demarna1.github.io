@@ -8,8 +8,8 @@ class FantasyLeagueDashboard {
     }
 
     init() {
-        this.loadData();
         this.loadSeasonData();
+        this.loadData();
         this.renderDashboard();
         this.setupSeasonSelector();
     }
