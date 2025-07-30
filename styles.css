@@ -1,0 +1,321 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 0;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.header-content h1 i {
+    color: #ffd700;
+    margin-right: 15px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    font-weight: 300;
+}
+
+/* Main content */
+.main-content {
+    margin-bottom: 40px;
+}
+
+.dashboard-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.card-header h2 i {
+    margin-right: 10px;
+    color: #ffd700;
+}
+
+.stats-summary {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    min-width: 100px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffd700;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Table styles */
+.table-container {
+    padding: 30px;
+    overflow-x: auto;
+}
+
+.league-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.league-table thead {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.league-table th {
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.league-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f1f3f4;
+    transition: background-color 0.2s ease;
+}
+
+.league-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.league-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Rank column */
+.league-table th:first-child,
+.league-table td:first-child {
+    text-align: center;
+    font-weight: 600;
+    width: 80px;
+}
+
+/* Championships column */
+.league-table th:nth-child(4),
+.league-table td:nth-child(4) {
+    text-align: center;
+    font-weight: 600;
+    color: #28a745;
+}
+
+/* Playoff appearances column */
+.league-table th:nth-child(5),
+.league-table td:nth-child(5) {
+    text-align: center;
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* Win rate column */
+.league-table th:nth-child(6),
+.league-table td:nth-child(6) {
+    text-align: center;
+    font-weight: 600;
+    color: #6f42c1;
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 60px 30px;
+    color: #6c757d;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.empty-state h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+.empty-state p {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .card-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .stats-summary {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .stat-item {
+        min-width: 80px;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .table-container {
+        padding: 15px;
+    }
+    
+    .league-table th,
+    .league-table td {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .league-table th:first-child,
+    .league-table td:first-child {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .card-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .stats-summary {
+        gap: 15px;
+    }
+    
+    .stat-item {
+        min-width: 70px;
+    }
+    
+    .stat-number {
+        font-size: 1.3rem;
+    }
+    
+    .league-table {
+        font-size: 0.8rem;
+    }
+    
+    .league-table th,
+    .league-table td {
+        padding: 8px 10px;
+    }
+}
+
+/* Animation for loading data */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.league-table tbody tr {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Trophy icon for champions */
+.champion-icon {
+    color: #ffd700;
+    margin-right: 5px;
+}
+
+/* Playoff icon */
+.playoff-icon {
+    color: #007bff;
+    margin-right: 5px;
+} 
