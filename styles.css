@@ -156,28 +156,38 @@ body {
     width: 80px;
 }
 
-/* Championships column */
+/* Record column */
+.league-table th:nth-child(3),
+.league-table td:nth-child(3) {
+    text-align: center;
+    font-weight: 600;
+    color: #dc3545;
+}
+
+/* Points For column */
 .league-table th:nth-child(4),
 .league-table td:nth-child(4) {
     text-align: center;
     font-weight: 600;
-    color: #28a745;
+    color: #fd7e14;
 }
 
-/* Playoff appearances column */
+/* Points Against column */
 .league-table th:nth-child(5),
 .league-table td:nth-child(5) {
     text-align: center;
     font-weight: 600;
-    color: #007bff;
+    color: #6c757d;
 }
 
-/* Win rate column */
-.league-table th:nth-child(6),
-.league-table td:nth-child(6) {
-    text-align: center;
-    font-weight: 600;
-    color: #6f42c1;
+/* Playoff team styling */
+.playoff-team {
+    background-color: rgba(0, 123, 255, 0.05) !important;
+    border-left: 4px solid #007bff;
+}
+
+.playoff-team:hover {
+    background-color: rgba(0, 123, 255, 0.1) !important;
 }
 
 /* Empty state */
