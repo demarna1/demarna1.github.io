@@ -19,139 +19,138 @@ class FantasyLeagueDashboard {
     }
 
     loadData() {
-        // 2022 Fantasy Football League Data
+        // Combined 2021-2022 Fantasy Football League Data
         this.leagueData = [
             {
-                rank: 1,
-                memberName: "Hazed and Confused",
-                teamName: "Hazed and Confused",
-                championships: 9,
-                playoffAppearances: 35,
-                winRate: "73.3%",
-                record: "11-4-0",
-                pointsFor: 2126.21,
-                pointsAgainst: 1779.70,
-                streak: "L-1",
-                moneyWon: "$4"
-            },
-            {
-                rank: 2,
-                memberName: "PlayBoys",
-                teamName: "PlayBoys",
-                championships: 10,
-                playoffAppearances: 29,
-                winRate: "93.3%",
-                record: "14-1-0",
-                pointsFor: 2016.20,
-                pointsAgainst: 1569.41,
-                streak: "W-8",
-                moneyWon: "$58"
-            },
-            {
-                rank: 3,
-                memberName: "Spider 2 Y Banana",
-                teamName: "Spider 2 Y Banana",
-                championships: 7,
-                playoffAppearances: 19,
-                winRate: "53.3%",
-                record: "8-7-0",
-                pointsFor: 1785.42,
-                pointsAgainst: 1778.82,
-                streak: "W-1",
-                moneyWon: "$45"
-            },
-            {
-                rank: 4,
-                memberName: "Team IR",
-                teamName: "Team IR",
-                championships: 8,
-                playoffAppearances: 25,
-                winRate: "66.7%",
-                record: "10-5-0",
-                pointsFor: 1955.64,
-                pointsAgainst: 1830.14,
-                streak: "L-1",
-                moneyWon: "$0"
-            },
-            {
-                rank: 5,
-                memberName: "The CeeDee Players",
-                teamName: "The CeeDee Players",
-                championships: 5,
-                playoffAppearances: 33,
-                winRate: "46.7%",
-                record: "7-8-0",
-                pointsFor: 1551.94,
-                pointsAgainst: 1688.51,
-                streak: "W-4",
-                moneyWon: "$22"
-            },
-            {
-                rank: 6,
-                memberName: "Fresh Prince Helaire",
                 teamName: "Fresh Prince Helaire",
-                championships: 6,
-                playoffAppearances: 31,
-                winRate: "46.7%",
-                record: "7-8-0",
-                pointsFor: 1734.08,
-                pointsAgainst: 1775.45,
-                streak: "W-1",
-                moneyWon: "$8"
+                totalWins: 19,
+                totalLosses: 11,
+                totalTies: 0,
+                totalPointsFor: 3891.36,
+                totalPointsAgainst: 3552.26,
+                playoffAppearances: 2,
+                bestFinish: 1,
+                avgPointsPerGame: 1945.68
             },
             {
-                rank: 7,
-                memberName: "Cooper Troopers",
-                teamName: "Cooper Troopers",
-                championships: 4,
-                playoffAppearances: 6,
-                winRate: "40.0%",
-                record: "6-9-0",
-                pointsFor: 1636.88,
-                pointsAgainst: 1711.10,
-                streak: "L-6",
-                moneyWon: "$80"
+                teamName: "Hazed and Confused",
+                totalWins: 20,
+                totalLosses: 10,
+                totalTies: 0,
+                totalPointsFor: 4242.37,
+                totalPointsAgainst: 3658.89,
+                playoffAppearances: 2,
+                bestFinish: 1,
+                avgPointsPerGame: 2121.19
             },
             {
-                rank: 8,
-                memberName: "Suspension == IR",
-                teamName: "Suspension == IR",
-                championships: 3,
-                playoffAppearances: 20,
-                winRate: "26.7%",
-                record: "4-11-0",
-                pointsFor: 1703.47,
-                pointsAgainst: 1899.71,
-                streak: "W-2",
-                moneyWon: "$47"
+                teamName: "Spider 2 Y Banana",
+                totalWins: 15,
+                totalLosses: 15,
+                totalTies: 0,
+                totalPointsFor: 3489.03,
+                totalPointsAgainst: 3625.16,
+                playoffAppearances: 2,
+                bestFinish: 2,
+                avgPointsPerGame: 1744.52
             },
             {
-                rank: 9,
-                memberName: "Mr. Big Chest",
-                teamName: "Mr. Big Chest",
-                championships: 2,
-                playoffAppearances: 35,
-                winRate: "26.7%",
-                record: "4-11-0",
-                pointsFor: 1670.96,
-                pointsAgainst: 1960.44,
-                streak: "L-8",
-                moneyWon: "$8"
-            },
-            {
-                rank: 10,
-                memberName: "Ciroc Boys",
                 teamName: "Ciroc Boys",
-                championships: 1,
-                playoffAppearances: 39,
-                winRate: "26.7%",
-                record: "4-11-0",
-                pointsFor: 1619.68,
-                pointsAgainst: 1807.20,
-                streak: "L-4",
-                moneyWon: "$33"
+                totalWins: 12,
+                totalLosses: 18,
+                totalTies: 0,
+                totalPointsFor: 3479.50,
+                totalPointsAgainst: 3589.03,
+                playoffAppearances: 1,
+                bestFinish: 4,
+                avgPointsPerGame: 1739.75
+            },
+            {
+                teamName: "Mr. Big Chest",
+                totalWins: 12,
+                totalLosses: 18,
+                totalTies: 0,
+                totalPointsFor: 3463.02,
+                totalPointsAgainst: 3768.41,
+                playoffAppearances: 0,
+                bestFinish: 5,
+                avgPointsPerGame: 1731.51
+            },
+            {
+                teamName: "The CeeDee Players",
+                totalWins: 12,
+                totalLosses: 16,
+                totalTies: 0,
+                totalPointsFor: 3242.48,
+                totalPointsAgainst: 3474.65,
+                playoffAppearances: 0,
+                bestFinish: 5,
+                avgPointsPerGame: 1621.24
+            },
+            {
+                teamName: "Team IR",
+                totalWins: 15,
+                totalLosses: 15,
+                totalTies: 0,
+                totalPointsFor: 3611.70,
+                totalPointsAgainst: 3634.45,
+                playoffAppearances: 1,
+                bestFinish: 4,
+                avgPointsPerGame: 1805.85
+            },
+            {
+                teamName: "Cooper Troopers",
+                totalWins: 11,
+                totalLosses: 19,
+                totalTies: 0,
+                totalPointsFor: 3184.47,
+                totalPointsAgainst: 3556.06,
+                playoffAppearances: 0,
+                bestFinish: 7,
+                avgPointsPerGame: 1592.24
+            },
+            {
+                teamName: "Suk 4 Saquan",
+                totalWins: 10,
+                totalLosses: 5,
+                totalTies: 0,
+                totalPointsFor: 1861.80,
+                totalPointsAgainst: 1666.34,
+                playoffAppearances: 1,
+                bestFinish: 2,
+                avgPointsPerGame: 1861.80
+            },
+            {
+                teamName: "PlayBoys",
+                totalWins: 14,
+                totalLosses: 1,
+                totalTies: 0,
+                totalPointsFor: 2016.20,
+                totalPointsAgainst: 1569.41,
+                playoffAppearances: 1,
+                bestFinish: 2,
+                avgPointsPerGame: 2016.20
+            },
+            {
+                teamName: "Outta Luck",
+                totalWins: 4,
+                totalLosses: 11,
+                totalTies: 0,
+                totalPointsFor: 1562.31,
+                totalPointsAgainst: 1781.34,
+                playoffAppearances: 0,
+                bestFinish: 10,
+                avgPointsPerGame: 1562.31
             }
         ];
+        
+        // Sort by total wins (descending)
+        this.leagueData.sort((a, b) => b.totalWins - a.totalWins);
+        
+        // Add rank after sorting
+        this.leagueData.forEach((team, index) => {
+            team.rank = index + 1;
+        });
     }
 
     renderDashboard() {
@@ -162,11 +161,11 @@ class FantasyLeagueDashboard {
 
     updateStats() {
         const totalMembers = this.leagueData.length;
-        const playoffTeams = this.leagueData.filter(member => member.rank <= 4).length;
-        const avgPoints = this.leagueData.reduce((sum, member) => sum + member.pointsFor, 0) / totalMembers;
+        const totalPlayoffAppearances = this.leagueData.reduce((sum, team) => sum + team.playoffAppearances, 0);
+        const avgPoints = this.leagueData.reduce((sum, team) => sum + team.totalPointsFor, 0) / totalMembers;
 
         document.getElementById('total-members').textContent = totalMembers;
-        document.getElementById('total-playoffs').textContent = playoffTeams;
+        document.getElementById('total-playoffs').textContent = totalPlayoffAppearances;
         document.getElementById('avg-points').textContent = avgPoints.toFixed(1);
     }
 
@@ -178,17 +177,18 @@ class FantasyLeagueDashboard {
             return;
         }
 
-        this.leagueData.forEach((member, index) => {
+        this.leagueData.forEach((team, index) => {
             const row = document.createElement('tr');
-            const isPlayoffTeam = member.rank <= 4;
+            const hasPlayoffAppearances = team.playoffAppearances > 0;
             row.innerHTML = `
-                <td>${member.rank}</td>
-                <td>${member.teamName}${isPlayoffTeam ? ' <i class="fas fa-star playoff-icon"></i>' : ''}</td>
-                <td>${member.record}</td>
-                <td>${member.pointsFor.toFixed(2)}</td>
-                <td>${member.pointsAgainst.toFixed(2)}</td>
+                <td>${team.rank}</td>
+                <td>${team.teamName}${hasPlayoffAppearances ? ' <i class="fas fa-star playoff-icon"></i>' : ''}</td>
+                <td>${team.totalWins}-${team.totalLosses}-${team.totalTies}</td>
+                <td>${team.totalPointsFor.toFixed(2)}</td>
+                <td>${team.playoffAppearances}</td>
+                <td>${team.bestFinish}</td>
             `;
-            if (isPlayoffTeam) {
+            if (hasPlayoffAppearances) {
                 row.classList.add('playoff-team');
             }
             tableBody.appendChild(row);

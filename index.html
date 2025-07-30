@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasy Football League Dashboard</title>
+    <title>Big A Memorial League - Fantasy Football Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,15 +12,20 @@
     <div class="container">
         <header class="header">
             <div class="header-content">
-                <h1><i class="fas fa-trophy"></i> Fantasy Football League</h1>
-                <p class="subtitle">League Champions & Playoff History</p>
+                <h1><i class="fas fa-trophy"></i> Big A Memorial League</h1>
+                <p class="subtitle">Fantasy Football Champions & Playoff History</p>
+                <div class="football-decoration">
+                    <i class="fas fa-football-ball"></i>
+                    <i class="fas fa-helmet-safety"></i>
+                    <i class="fas fa-football-ball"></i>
+                </div>
             </div>
         </header>
 
         <main class="main-content">
             <div class="dashboard-card">
                 <div class="card-header">
-                    <h2><i class="fas fa-users"></i> 2022 Regular Season Standings</h2>
+                    <h2><i class="fas fa-helmet-safety"></i> 2021-2022 League History</h2>
                     <div class="stats-summary">
                         <div class="stat-item">
                             <span class="stat-number" id="total-members">0</span>
@@ -28,7 +33,7 @@
                         </div>
                         <div class="stat-item">
                             <span class="stat-number" id="total-playoffs">0</span>
-                            <span class="stat-label">Playoff Teams</span>
+                            <span class="stat-label">Playoff Appearances</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number" id="avg-points">0</span>
@@ -41,11 +46,12 @@
                     <table class="league-table">
                         <thead>
                             <tr>
-                                <th>Finish</th>
+                                <th>Rank</th>
                                 <th>Team Name</th>
-                                <th>Record</th>
-                                <th>Points For</th>
-                                <th>Points Against</th>
+                                <th>Total Record</th>
+                                <th>Total Points For</th>
+                                <th>Playoff Appearances</th>
+                                <th>Best Finish</th>
                             </tr>
                         </thead>
                         <tbody id="league-table-body">
@@ -63,7 +69,7 @@
         </main>
 
         <footer class="footer">
-            <p>&copy; 2024 Fantasy Football League Dashboard</p>
+            <p>&copy; 2024 Big A Memorial League - Fantasy Football Dashboard</p>
         </footer>
     </div>
 
