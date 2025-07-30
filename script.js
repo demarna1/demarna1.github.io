@@ -18,6 +18,7 @@ class FantasyLeagueDashboard {
         document.addEventListener('DOMContentLoaded', () => {
             this.init();
             this.setupSorting();
+            this.setupModalEventListeners();
         });
     }
 
@@ -322,7 +323,15 @@ class FantasyLeagueDashboard {
             return;
         }
 
-        let message = `${manager}'s Dynasty Spans:\n\n`;
+        const modal = document.getElementById('dynasty-modal');
+        const modalTitle = document.getElementById('dynasty-modal-title');
+        const modalBody = document.getElementById('dynasty-modal-body');
+
+        // Set the title
+        modalTitle.textContent = `${manager}'s Dynasty Spans`;
+
+        // Build the content
+        let content = '';
         team.dynastySpans.forEach((span, index) => {
             // Filter results to only include years where medals were won (points > 0)
             const medalResults = span.results.filter(r => r.points > 0);
@@ -332,15 +341,46 @@ class FantasyLeagueDashboard {
             const actualStartYear = Math.min(...medalYears);
             const actualEndYear = Math.max(...medalYears);
             
-            message += `Dynasty ${index + 1}: ${actualStartYear}-${actualEndYear}\n`;
-            message += `Total Points: ${span.totalPoints}\n`;
-            message += `Results: ${medalResults.map(r => {
-                const medal = r.rank === 1 ? '🥇' : r.rank === 2 ? '🥈' : '🥉';
-                return `${r.year} ${medal}`;
-            }).join(', ')}\n\n`;
+            content += `
+                <div class="dynasty-span">
+                    <h4>Dynasty ${index + 1}: ${actualStartYear}-${actualEndYear}</h4>
+                    <p><strong>Total Points:</strong> ${span.totalPoints}</p>
+                    <div class="dynasty-results">
+                        <strong>Results:</strong> ${medalResults.map(r => {
+                            const medal = r.rank === 1 ? '🥇' : r.rank === 2 ? '🥈' : '🥉';
+                            return `${r.year} ${medal}`;
+                        }).join(', ')}
+                    </div>
+                </div>
+            `;
         });
 
-        alert(message);
+        modalBody.innerHTML = content;
+        modal.style.display = 'block';
+    }
+
+    setupModalEventListeners() {
+        const modal = document.getElementById('dynasty-modal');
+        const closeBtn = document.querySelector('.close');
+
+        // Close modal when clicking the X button
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside of it
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && modal.style.display === 'block') {
+                modal.style.display = 'none';
+            }
+        });
     }
 
     loadSeasonData() {
