@@ -231,9 +231,33 @@ body::before {
     color: #007bff;
 }
 
-/* Best Finish column */
+/* Gold column */
 .league-table th:nth-child(6),
 .league-table td:nth-child(6) {
+    text-align: center;
+    font-weight: 600;
+    color: #ffd700;
+}
+
+/* Silver column */
+.league-table th:nth-child(7),
+.league-table td:nth-child(7) {
+    text-align: center;
+    font-weight: 600;
+    color: #c0c0c0;
+}
+
+/* Bronze column */
+.league-table th:nth-child(8),
+.league-table td:nth-child(8) {
+    text-align: center;
+    font-weight: 600;
+    color: #cd7f32;
+}
+
+/* Best Finish column */
+.league-table th:nth-child(9),
+.league-table td:nth-child(9) {
     text-align: center;
     font-weight: 600;
     color: #28a745;

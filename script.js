@@ -19,106 +19,147 @@ class FantasyLeagueDashboard {
     }
 
     loadData() {
-        // Combined 2021-2022 Fantasy Football League Data
+        // Combined 2019-2022 Fantasy Football League Data
         this.leagueData = [
             {
-                teamName: "Fresh Prince Helaire",
-                totalWins: 19,
-                totalLosses: 11,
+                teamName: "Spider 2 Y Banana",
+                totalWins: 34,
+                totalLosses: 24,
                 totalTies: 0,
-                totalPointsFor: 3891.36,
-                totalPointsAgainst: 3552.26,
-                playoffAppearances: 2,
+                totalPointsFor: 6920.93,
+                totalPointsAgainst: 6641.90,
+                playoffAppearances: 4,
+                gold: 1,
+                silver: 1,
+                bronze: 0,
                 bestFinish: 1,
-                avgPointsPerGame: 1945.68
+                avgPointsPerGame: 1730.23
             },
             {
                 teamName: "Hazed and Confused",
-                totalWins: 20,
-                totalLosses: 10,
+                totalWins: 33,
+                totalLosses: 25,
                 totalTies: 0,
-                totalPointsFor: 4242.37,
-                totalPointsAgainst: 3658.89,
-                playoffAppearances: 2,
+                totalPointsFor: 7878.40,
+                totalPointsAgainst: 7130.50,
+                playoffAppearances: 3,
+                gold: 1,
+                silver: 0,
+                bronze: 0,
                 bestFinish: 1,
-                avgPointsPerGame: 2121.19
-            },
-            {
-                teamName: "Spider 2 Y Banana",
-                totalWins: 15,
-                totalLosses: 15,
-                totalTies: 0,
-                totalPointsFor: 3489.03,
-                totalPointsAgainst: 3625.16,
-                playoffAppearances: 2,
-                bestFinish: 2,
-                avgPointsPerGame: 1744.52
-            },
-            {
-                teamName: "Ciroc Boys",
-                totalWins: 12,
-                totalLosses: 18,
-                totalTies: 0,
-                totalPointsFor: 3479.50,
-                totalPointsAgainst: 3589.03,
-                playoffAppearances: 1,
-                bestFinish: 4,
-                avgPointsPerGame: 1739.75
-            },
-            {
-                teamName: "Mr. Big Chest",
-                totalWins: 12,
-                totalLosses: 18,
-                totalTies: 0,
-                totalPointsFor: 3463.02,
-                totalPointsAgainst: 3768.41,
-                playoffAppearances: 0,
-                bestFinish: 5,
-                avgPointsPerGame: 1731.51
-            },
-            {
-                teamName: "The CeeDee Players",
-                totalWins: 12,
-                totalLosses: 16,
-                totalTies: 0,
-                totalPointsFor: 3242.48,
-                totalPointsAgainst: 3474.65,
-                playoffAppearances: 0,
-                bestFinish: 5,
-                avgPointsPerGame: 1621.24
-            },
-            {
-                teamName: "Team IR",
-                totalWins: 15,
-                totalLosses: 15,
-                totalTies: 0,
-                totalPointsFor: 3611.70,
-                totalPointsAgainst: 3634.45,
-                playoffAppearances: 1,
-                bestFinish: 4,
-                avgPointsPerGame: 1805.85
-            },
-            {
-                teamName: "Cooper Troopers",
-                totalWins: 11,
-                totalLosses: 19,
-                totalTies: 0,
-                totalPointsFor: 3184.47,
-                totalPointsAgainst: 3556.06,
-                playoffAppearances: 0,
-                bestFinish: 7,
-                avgPointsPerGame: 1592.24
+                avgPointsPerGame: 1969.60
             },
             {
                 teamName: "Suk 4 Saquan",
-                totalWins: 10,
-                totalLosses: 5,
+                totalWins: 29,
+                totalLosses: 11,
                 totalTies: 0,
-                totalPointsFor: 1861.80,
-                totalPointsAgainst: 1666.34,
-                playoffAppearances: 1,
+                totalPointsFor: 5360.31,
+                totalPointsAgainst: 4790.00,
+                playoffAppearances: 3,
+                gold: 1,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 1,
+                avgPointsPerGame: 1786.77
+            },
+            {
+                teamName: "Fresh Prince Helaire",
+                totalWins: 29,
+                totalLosses: 26,
+                totalTies: 0,
+                totalPointsFor: 7244.62,
+                totalPointsAgainst: 6961.12,
+                playoffAppearances: 2,
+                gold: 1,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 1,
+                avgPointsPerGame: 1811.16
+            },
+            {
+                teamName: "Ciroc Boys",
+                totalWins: 28,
+                totalLosses: 30,
+                totalTies: 0,
+                totalPointsFor: 6844.07,
+                totalPointsAgainst: 6883.59,
+                playoffAppearances: 3,
+                gold: 0,
+                silver: 1,
+                bronze: 0,
                 bestFinish: 2,
-                avgPointsPerGame: 1861.80
+                avgPointsPerGame: 1711.02
+            },
+            {
+                teamName: "Cooper Troopers",
+                totalWins: 26,
+                totalLosses: 32,
+                totalTies: 0,
+                totalPointsFor: 6680.33,
+                totalPointsAgainst: 7186.54,
+                playoffAppearances: 2,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 4,
+                avgPointsPerGame: 1670.08
+            },
+            {
+                teamName: "Mr. Big Chest",
+                totalWins: 24,
+                totalLosses: 34,
+                totalTies: 0,
+                totalPointsFor: 6738.41,
+                totalPointsAgainst: 7208.99,
+                playoffAppearances: 1,
+                gold: 0,
+                silver: 0,
+                bronze: 1,
+                bestFinish: 3,
+                avgPointsPerGame: 1684.60
+            },
+            {
+                teamName: "Team IR",
+                totalWins: 21,
+                totalLosses: 23,
+                totalTies: 0,
+                totalPointsFor: 5319.64,
+                totalPointsAgainst: 5435.73,
+                playoffAppearances: 2,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 4,
+                avgPointsPerGame: 1773.21
+            },
+            {
+                teamName: "Outta Luck",
+                totalWins: 16,
+                totalLosses: 27,
+                totalTies: 0,
+                totalPointsFor: 4515.80,
+                totalPointsAgainst: 5119.04,
+                playoffAppearances: 0,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 7,
+                avgPointsPerGame: 1505.27
+            },
+            {
+                teamName: "The CeeDee Players",
+                totalWins: 16,
+                totalLosses: 26,
+                totalTies: 0,
+                totalPointsFor: 4799.50,
+                totalPointsAgainst: 5243.77,
+                playoffAppearances: 0,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 5,
+                avgPointsPerGame: 1599.83
             },
             {
                 teamName: "PlayBoys",
@@ -128,19 +169,53 @@ class FantasyLeagueDashboard {
                 totalPointsFor: 2016.20,
                 totalPointsAgainst: 1569.41,
                 playoffAppearances: 1,
+                gold: 0,
+                silver: 1,
+                bronze: 0,
                 bestFinish: 2,
                 avgPointsPerGame: 2016.20
             },
             {
-                teamName: "Outta Luck",
-                totalWins: 4,
-                totalLosses: 11,
+                teamName: "Failed to fail for27",
+                totalWins: 6,
+                totalLosses: 8,
                 totalTies: 0,
-                totalPointsFor: 1562.31,
-                totalPointsAgainst: 1781.34,
+                totalPointsFor: 1695.18,
+                totalPointsAgainst: 1634.98,
                 playoffAppearances: 0,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 5,
+                avgPointsPerGame: 1695.18
+            },
+            {
+                teamName: "Team Gingold",
+                totalWins: 7,
+                totalLosses: 7,
+                totalTies: 0,
+                totalPointsFor: 1557.36,
+                totalPointsAgainst: 1606.61,
+                playoffAppearances: 0,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 6,
+                avgPointsPerGame: 1557.36
+            },
+            {
+                teamName: "Biggest loser",
+                totalWins: 6,
+                totalLosses: 8,
+                totalTies: 0,
+                totalPointsFor: 1596.34,
+                totalPointsAgainst: 1761.47,
+                playoffAppearances: 0,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
                 bestFinish: 10,
-                avgPointsPerGame: 1562.31
+                avgPointsPerGame: 1596.34
             }
         ];
         
@@ -186,6 +261,9 @@ class FantasyLeagueDashboard {
                 <td>${team.totalWins}-${team.totalLosses}-${team.totalTies}</td>
                 <td>${team.totalPointsFor.toFixed(2)}</td>
                 <td>${team.playoffAppearances}</td>
+                <td>${team.gold}</td>
+                <td>${team.silver}</td>
+                <td>${team.bronze}</td>
                 <td>${team.bestFinish}</td>
             `;
             if (hasPlayoffAppearances) {
