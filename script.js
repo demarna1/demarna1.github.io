@@ -730,7 +730,7 @@ class FantasyLeagueDashboard {
             const hasPlayoffAppearances = team.playoffAppearances > 0;
             row.innerHTML = `
                 <td>${team.rank}</td>
-                <td>${team.teamName}</td>
+                <td>${hasPlayoffAppearances ? '🏆 ' : ''}${team.teamName}</td>
                 <td>${team.totalWins}-${team.totalLosses}-${team.totalTies}</td>
                 <td>${team.totalPointsFor.toFixed(2)}</td>
                 <td>${team.playoffAppearances}</td>

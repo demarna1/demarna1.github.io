@@ -62,6 +62,22 @@ body::before {
     margin-bottom: 20px;
 }
 
+/* League Photo Styles */
+.league-photo {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.league-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 3px solid #ffd700;
+    max-height: 400px;
+    object-fit: cover;
+}
+
 .football-decoration {
     display: flex;
     justify-content: center;
@@ -123,11 +139,32 @@ body::before {
 .card-header h2 {
     font-size: 1.8rem;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .card-header h2 i {
     margin-right: 10px;
     color: #ffd700;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.year-range {
+    font-size: 1.1rem;
+    color: #ffd700;
+    font-weight: 500;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.summary-description {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.4;
 }
 
 .stats-summary {
@@ -267,25 +304,10 @@ body::before {
 .playoff-team {
     background-color: rgba(0, 123, 255, 0.05) !important;
     border-left: 4px solid #007bff;
-    position: relative;
-}
-
-.playoff-team::before {
-    content: '🏆';
-    position: absolute;
-    left: -25px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.2rem;
-    opacity: 0.7;
 }
 
 .playoff-team:hover {
     background-color: rgba(0, 123, 255, 0.1) !important;
-}
-
-.playoff-team:hover::before {
-    opacity: 1;
 }
 
 /* Empty state */
@@ -330,10 +352,18 @@ body::before {
         font-size: 2rem;
     }
     
+    .league-image {
+        max-height: 300px;
+    }
+    
     .card-header {
         flex-direction: column;
         text-align: center;
         gap: 20px;
+    }
+    
+    .header-text {
+        text-align: center;
     }
     
     .stats-summary {
