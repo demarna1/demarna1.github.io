@@ -84,7 +84,7 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 400px;
+    height: 300px;
 }
 
 .league-image {
@@ -93,7 +93,7 @@ body::before {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     border: 3px solid #ffd700;
-    max-height: 400px;
+    max-height: 300px;
     object-fit: cover;
 }
 
@@ -106,7 +106,7 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 400px;
+    height: 300px;
 }
 
 .trophy-image {
@@ -115,7 +115,7 @@ body::before {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     border: 3px solid #ffd700;
-    max-height: 320px;
+    max-height: 240px;
     object-fit: cover;
     flex-shrink: 0;
 }
