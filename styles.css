@@ -71,7 +71,7 @@ body::before {
     justify-content: center;
     align-items: stretch;
     gap: 30px;
-    margin: 30px 0;
+    margin: 30px 0 20px 0;
     flex-wrap: wrap;
 }
 
@@ -178,6 +178,10 @@ body::before {
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     overflow: hidden;
     backdrop-filter: blur(10px);
+}
+
+.dashboard-card + .dashboard-card {
+    margin-top: 20px;
 }
 
 .card-header {
