@@ -250,8 +250,8 @@ class FantasyLeagueDashboard {
                 }
             });
             
-            // If total points >= 5, this is a dynasty span
-            if (totalPoints >= 5) {
+            // If total points >= 6, this is a dynasty span
+            if (totalPoints >= 6) {
                 spans.push({
                     startYear: windowYears[0],
                     endYear: windowYears[3],
@@ -262,7 +262,57 @@ class FantasyLeagueDashboard {
             }
         }
         
-        return spans;
+        // Merge overlapping spans
+        return this.mergeOverlappingSpans(spans);
+    }
+
+    mergeOverlappingSpans(spans) {
+        if (spans.length <= 1) {
+            return spans;
+        }
+        
+        // Sort spans by start year
+        spans.sort((a, b) => a.startYear - b.startYear);
+        
+        const mergedSpans = [];
+        let currentSpan = { ...spans[0] };
+        
+        for (let i = 1; i < spans.length; i++) {
+            const nextSpan = spans[i];
+            
+            // Check if spans overlap or are adjacent
+            if (nextSpan.startYear <= currentSpan.endYear + 1) {
+                // Merge the spans
+                currentSpan.endYear = Math.max(currentSpan.endYear, nextSpan.endYear);
+                currentSpan.totalPoints = Math.max(currentSpan.totalPoints, nextSpan.totalPoints);
+                
+                // Merge years and results
+                const allYears = [...new Set([...currentSpan.years, ...nextSpan.years])].sort((a, b) => a - b);
+                const allResults = [...currentSpan.results, ...nextSpan.results];
+                
+                // Remove duplicates from results
+                const uniqueResults = [];
+                const seenYears = new Set();
+                allResults.forEach(result => {
+                    if (!seenYears.has(result.year)) {
+                        seenYears.add(result.year);
+                        uniqueResults.push(result);
+                    }
+                });
+                
+                currentSpan.years = allYears;
+                currentSpan.results = uniqueResults.sort((a, b) => a.year - b.year);
+            } else {
+                // No overlap, add current span and start new one
+                mergedSpans.push(currentSpan);
+                currentSpan = { ...nextSpan };
+            }
+        }
+        
+        // Add the last span
+        mergedSpans.push(currentSpan);
+        
+        return mergedSpans;
     }
 
     showDynastySpans(manager) {
