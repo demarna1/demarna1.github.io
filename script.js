@@ -324,9 +324,17 @@ class FantasyLeagueDashboard {
 
         let message = `${manager}'s Dynasty Spans:\n\n`;
         team.dynastySpans.forEach((span, index) => {
-            message += `Dynasty ${index + 1}: ${span.startYear}-${span.endYear}\n`;
+            // Filter results to only include years where medals were won (points > 0)
+            const medalResults = span.results.filter(r => r.points > 0);
+            const medalYears = medalResults.map(r => r.year).sort((a, b) => a - b);
+            
+            // Calculate the actual span based on medal years only
+            const actualStartYear = Math.min(...medalYears);
+            const actualEndYear = Math.max(...medalYears);
+            
+            message += `Dynasty ${index + 1}: ${actualStartYear}-${actualEndYear}\n`;
             message += `Total Points: ${span.totalPoints}\n`;
-            message += `Results: ${span.results.map(r => {
+            message += `Results: ${medalResults.map(r => {
                 const medal = r.rank === 1 ? '🥇' : r.rank === 2 ? '🥈' : '🥉';
                 return `${r.year} ${medal}`;
             }).join(', ')}\n\n`;
