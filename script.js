@@ -19,49 +19,77 @@ class FantasyLeagueDashboard {
     }
 
     loadData() {
-        // Combined 2019-2022 Fantasy Football League Data
+        // Combined 2017-2022 Fantasy Football League Data
         this.leagueData = [
             {
-                teamName: "Spider 2 Y Banana",
-                totalWins: 34,
-                totalLosses: 24,
+                teamName: "Hazed and Confused",
+                totalWins: 51,
+                totalLosses: 35,
                 totalTies: 0,
-                totalPointsFor: 6920.93,
-                totalPointsAgainst: 6641.90,
-                playoffAppearances: 4,
+                totalPointsFor: 11579.22,
+                totalPointsAgainst: 10385.91,
+                playoffAppearances: 5,
+                gold: 2,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 1,
+                avgPointsPerGame: 1930.20
+            },
+            {
+                teamName: "Spider 2 Y Banana",
+                totalWins: 47,
+                totalLosses: 39,
+                totalTies: 0,
+                totalPointsFor: 10121.87,
+                totalPointsAgainst: 10146.25,
+                playoffAppearances: 5,
                 gold: 1,
                 silver: 1,
                 bronze: 0,
                 bestFinish: 1,
-                avgPointsPerGame: 1730.23
-            },
-            {
-                teamName: "Hazed and Confused",
-                totalWins: 33,
-                totalLosses: 25,
-                totalTies: 0,
-                totalPointsFor: 7878.40,
-                totalPointsAgainst: 7130.50,
-                playoffAppearances: 3,
-                gold: 1,
-                silver: 0,
-                bronze: 0,
-                bestFinish: 1,
-                avgPointsPerGame: 1969.60
+                avgPointsPerGame: 1687.15
             },
             {
                 teamName: "Suk 4 Saquan",
-                totalWins: 29,
-                totalLosses: 11,
+                totalWins: 45,
+                totalLosses: 23,
                 totalTies: 0,
-                totalPointsFor: 5360.31,
-                totalPointsAgainst: 4790.00,
-                playoffAppearances: 3,
-                gold: 1,
+                totalPointsFor: 8566.16,
+                totalPointsAgainst: 7966.43,
+                playoffAppearances: 4,
+                gold: 2,
                 silver: 0,
                 bronze: 0,
                 bestFinish: 1,
-                avgPointsPerGame: 1786.77
+                avgPointsPerGame: 1713.23
+            },
+            {
+                teamName: "Cooper Troopers",
+                totalWins: 40,
+                totalLosses: 46,
+                totalTies: 0,
+                totalPointsFor: 9871.56,
+                totalPointsAgainst: 10621.97,
+                playoffAppearances: 4,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 4,
+                avgPointsPerGame: 1645.26
+            },
+            {
+                teamName: "Ciroc Boys",
+                totalWins: 37,
+                totalLosses: 49,
+                totalTies: 0,
+                totalPointsFor: 10024.42,
+                totalPointsAgainst: 10226.44,
+                playoffAppearances: 3,
+                gold: 0,
+                silver: 1,
+                bronze: 0,
+                bestFinish: 2,
+                avgPointsPerGame: 1670.74
             },
             {
                 teamName: "Fresh Prince Helaire",
@@ -78,32 +106,32 @@ class FantasyLeagueDashboard {
                 avgPointsPerGame: 1811.16
             },
             {
-                teamName: "Ciroc Boys",
-                totalWins: 28,
-                totalLosses: 30,
+                teamName: "skittles.",
+                totalWins: 18,
+                totalLosses: 10,
                 totalTies: 0,
-                totalPointsFor: 6844.07,
-                totalPointsAgainst: 6883.59,
-                playoffAppearances: 3,
+                totalPointsFor: 3698.07,
+                totalPointsAgainst: 3275.90,
+                playoffAppearances: 2,
+                gold: 1,
+                silver: 1,
+                bronze: 0,
+                bestFinish: 1,
+                avgPointsPerGame: 1849.04
+            },
+            {
+                teamName: "Failed to fail for27",
+                totalWins: 22,
+                totalLosses: 20,
+                totalTies: 0,
+                totalPointsFor: 4973.15,
+                totalPointsAgainst: 4765.09,
+                playoffAppearances: 1,
                 gold: 0,
                 silver: 1,
                 bronze: 0,
                 bestFinish: 2,
-                avgPointsPerGame: 1711.02
-            },
-            {
-                teamName: "Cooper Troopers",
-                totalWins: 26,
-                totalLosses: 32,
-                totalTies: 0,
-                totalPointsFor: 6680.33,
-                totalPointsAgainst: 7186.54,
-                playoffAppearances: 2,
-                gold: 0,
-                silver: 0,
-                bronze: 0,
-                bestFinish: 4,
-                avgPointsPerGame: 1670.08
+                avgPointsPerGame: 1657.72
             },
             {
                 teamName: "Mr. Big Chest",
@@ -132,6 +160,34 @@ class FantasyLeagueDashboard {
                 bronze: 0,
                 bestFinish: 4,
                 avgPointsPerGame: 1773.21
+            },
+            {
+                teamName: "Mixon A Box",
+                totalWins: 15,
+                totalLosses: 13,
+                totalTies: 0,
+                totalPointsFor: 3691.45,
+                totalPointsAgainst: 3370.21,
+                playoffAppearances: 1,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 4,
+                avgPointsPerGame: 1845.73
+            },
+            {
+                teamName: "Call Me The Brees",
+                totalWins: 12,
+                totalLosses: 16,
+                totalTies: 0,
+                totalPointsFor: 3418.28,
+                totalPointsAgainst: 3500.74,
+                playoffAppearances: 0,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 7,
+                avgPointsPerGame: 1709.14
             },
             {
                 teamName: "Outta Luck",
@@ -176,18 +232,32 @@ class FantasyLeagueDashboard {
                 avgPointsPerGame: 2016.20
             },
             {
-                teamName: "Failed to fail for27",
-                totalWins: 6,
-                totalLosses: 8,
+                teamName: "DraftedDavidJohnson",
+                totalWins: 5,
+                totalLosses: 9,
                 totalTies: 0,
-                totalPointsFor: 1695.18,
-                totalPointsAgainst: 1634.98,
+                totalPointsFor: 1468.09,
+                totalPointsAgainst: 1677.00,
                 playoffAppearances: 0,
                 gold: 0,
                 silver: 0,
                 bronze: 0,
-                bestFinish: 5,
-                avgPointsPerGame: 1695.18
+                bestFinish: 9,
+                avgPointsPerGame: 1468.09
+            },
+            {
+                teamName: "Team Boileau",
+                totalWins: 4,
+                totalLosses: 10,
+                totalTies: 0,
+                totalPointsFor: 1414.51,
+                totalPointsAgainst: 1779.13,
+                playoffAppearances: 0,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 10,
+                avgPointsPerGame: 1414.51
             },
             {
                 teamName: "Team Gingold",
@@ -257,7 +327,7 @@ class FantasyLeagueDashboard {
             const hasPlayoffAppearances = team.playoffAppearances > 0;
             row.innerHTML = `
                 <td>${team.rank}</td>
-                <td>${team.teamName}${hasPlayoffAppearances ? ' <i class="fas fa-star playoff-icon"></i>' : ''}</td>
+                <td>${team.teamName}</td>
                 <td>${team.totalWins}-${team.totalLosses}-${team.totalTies}</td>
                 <td>${team.totalPointsFor.toFixed(2)}</td>
                 <td>${team.playoffAppearances}</td>
