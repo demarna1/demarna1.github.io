@@ -4,7 +4,7 @@ class FantasyLeagueDashboard {
     constructor() {
         this.leagueData = [];
         this.seasonData = {};
-        this.currentSeason = '2023';
+        this.currentSeason = '2024';
     }
 
     init() {
@@ -22,19 +22,19 @@ class FantasyLeagueDashboard {
     }
 
     loadData() {
-        // Combined 2013-2023 Fantasy Football League Data - Grouped by Manager
+        // Combined 2013-2024 Fantasy Football League Data - Grouped by Manager
         this.leagueData = [
             {
                 manager: "Chris Gramley",
                 teamName: "Dynasty Dreaming",
-                totalWins: 83,
-                totalLosses: 59,
+                totalWins: 92,
+                totalLosses: 64,
                 totalTies: 0,
-                totalPointsFor: 18216.13,
-                totalPointsAgainst: 16835.29,
-                playoffAppearances: 7,
+                totalPointsFor: 20069.99,
+                totalPointsAgainst: 18482.47,
+                playoffAppearances: 8,
                 gold: 3,
-                silver: 0,
+                silver: 1,
                 bronze: 1,
                 bestFinish: 1,
                 avgPointsPerGame: 1820.85
@@ -42,12 +42,12 @@ class FantasyLeagueDashboard {
             {
                 manager: "Joe Kertsmar",
                 teamName: "Spider 2 Y Banana",
-                totalWins: 76,
-                totalLosses: 78,
+                totalWins: 83,
+                totalLosses: 85,
                 totalTies: 0,
-                totalPointsFor: 18294.48,
-                totalPointsAgainst: 18331.72,
-                playoffAppearances: 6,
+                totalPointsFor: 19802.78,
+                totalPointsAgainst: 19946.36,
+                playoffAppearances: 7,
                 gold: 1,
                 silver: 1,
                 bronze: 2,
@@ -57,12 +57,12 @@ class FantasyLeagueDashboard {
             {
                 manager: "Richie Morris",
                 teamName: "morrich13",
-                totalWins: 75,
-                totalLosses: 79,
+                totalWins: 83,
+                totalLosses: 85,
                 totalTies: 0,
-                totalPointsFor: 18123.25,
-                totalPointsAgainst: 18376.34,
-                playoffAppearances: 5,
+                totalPointsFor: 19890.53,
+                totalPointsAgainst: 20072.36,
+                playoffAppearances: 6,
                 gold: 0,
                 silver: 1,
                 bronze: 0,
@@ -72,11 +72,11 @@ class FantasyLeagueDashboard {
             {
                 manager: "John Adam Benson",
                 teamName: "PlayBoys",
-                totalWins: 67,
-                totalLosses: 47,
+                totalWins: 71,
+                totalLosses: 57,
                 totalTies: 0,
-                totalPointsFor: 13124.74,
-                totalPointsAgainst: 12167.63,
+                totalPointsFor: 14758.96,
+                totalPointsAgainst: 13902.31,
                 playoffAppearances: 6,
                 gold: 2,
                 silver: 2,
@@ -86,12 +86,12 @@ class FantasyLeagueDashboard {
             },
             {
                 manager: "Rob Murray",
-                teamName: "RobMurray1990",
+                teamName: "Basically a bye week",
                 totalWins: 52,
-                totalLosses: 62,
+                totalLosses: 76,
                 totalTies: 0,
-                totalPointsFor: 11740.28,
-                totalPointsAgainst: 12628.57,
+                totalPointsFor: 12986.28,
+                totalPointsAgainst: 14433.53,
                 playoffAppearances: 4,
                 gold: 0,
                 silver: 0,
@@ -102,11 +102,11 @@ class FantasyLeagueDashboard {
             {
                 manager: "Noah DeMarco",
                 teamName: "Asstronaut",
-                totalWins: 81,
-                totalLosses: 58,
+                totalWins: 87,
+                totalLosses: 66,
                 totalTies: 0,
-                totalPointsFor: 16645.10,
-                totalPointsAgainst: 15257.04,
+                totalPointsFor: 18240.50,
+                totalPointsAgainst: 16958.10,
                 playoffAppearances: 9,
                 gold: 3,
                 silver: 1,
@@ -116,14 +116,14 @@ class FantasyLeagueDashboard {
             },
             {
                 manager: "Ryan Jones",
-                teamName: "Micro Bulk LLC",
-                totalWins: 75,
-                totalLosses: 59,
+                teamName: "Team Kertsmar",
+                totalWins: 86,
+                totalLosses: 62,
                 totalTies: 0,
-                totalPointsFor: 15821.63,
-                totalPointsAgainst: 15193.26,
-                playoffAppearances: 4,
-                gold: 1,
+                totalPointsFor: 17626.37,
+                totalPointsAgainst: 16743.36,
+                playoffAppearances: 5,
+                gold: 2,
                 silver: 0,
                 bronze: 1,
                 bestFinish: 1,
@@ -147,31 +147,31 @@ class FantasyLeagueDashboard {
             {
                 manager: "Billy Cauley",
                 teamName: "Billy432",
-                totalWins: 61,
-                totalLosses: 46,
+                totalWins: 71,
+                totalLosses: 50,
                 totalTies: 0,
-                totalPointsFor: 12204.11,
-                totalPointsAgainst: 12054.59,
-                playoffAppearances: 5,
+                totalPointsFor: 14151.45,
+                totalPointsAgainst: 13724.81,
+                playoffAppearances: 6,
                 gold: 0,
                 silver: 1,
-                bronze: 1,
+                bronze: 2,
                 bestFinish: 2,
                 avgPointsPerGame: 1750.10
             },
             {
                 manager: "Ben Gingold",
-                teamName: "NYJ Super Bowl 58 Champs",
-                totalWins: 29,
-                totalLosses: 41,
+                teamName: "Daniels' Team of Destiny",
+                totalWins: 40,
+                totalLosses: 44,
                 totalTies: 0,
-                totalPointsFor: 7975.50,
-                totalPointsAgainst: 8551.52,
-                playoffAppearances: 0,
+                totalPointsFor: 9787.90,
+                totalPointsAgainst: 10136.90,
+                playoffAppearances: 1,
                 gold: 0,
                 silver: 0,
                 bronze: 0,
-                bestFinish: 5,
+                bestFinish: 4,
                 avgPointsPerGame: 1588.72
             },
             {
@@ -191,12 +191,12 @@ class FantasyLeagueDashboard {
             },
             {
                 manager: "Seth Sauder",
-                teamName: "Justice for Dom",
-                totalWins: 4,
-                totalLosses: 10,
+                teamName: "Ryan's Team",
+                totalWins: 8,
+                totalLosses: 20,
                 totalTies: 0,
-                totalPointsFor: 1499.30,
-                totalPointsAgainst: 1602.18,
+                totalPointsFor: 2964.86,
+                totalPointsAgainst: 3232.04,
                 playoffAppearances: 0,
                 gold: 0,
                 silver: 0,
@@ -216,8 +216,20 @@ class FantasyLeagueDashboard {
     }
 
     loadSeasonData() {
-        // Individual season data for 2013-2023
+        // Individual season data for 2013-2024
         this.seasonData = {
+            '2024': [
+                { rank: 1, teamName: "Team Kertsmar", record: "11-3-0", pointsFor: 1804.74, pointsAgainst: 1550.1, playoff: true },
+                { rank: 2, teamName: "Dynasty Dreaming", record: "9-5-0", pointsFor: 1852.86, pointsAgainst: 1647.18, playoff: true },
+                { rank: 3, teamName: "Billy432", record: "10-4-0", pointsFor: 1947.34, pointsAgainst: 1670.22, playoff: true },
+                { rank: 4, teamName: "Daniels' Team of Destiny", record: "11-3-0", pointsFor: 1812.4, pointsAgainst: 1585.38, playoff: true },
+                { rank: 5, teamName: "morrich13", record: "8-6-0", pointsFor: 1767.28, pointsAgainst: 1696.02, playoff: true },
+                { rank: 6, teamName: "Spider 2 Y Banana", record: "7-7-0", pointsFor: 1508.3, pointsAgainst: 1614.64, playoff: true },
+                { rank: 7, teamName: "Asstronaut", record: "6-8-0", pointsFor: 1595.4, pointsAgainst: 1701.06, playoff: false },
+                { rank: 8, teamName: "PlayBoys", record: "4-10-0", pointsFor: 1634.22, pointsAgainst: 1734.68, playoff: false },
+                { rank: 9, teamName: "Ryan's Team", record: "4-10-0", pointsFor: 1465.56, pointsAgainst: 1629.86, playoff: false },
+                { rank: 10, teamName: "Basically a bye week", record: "0-14-0", pointsFor: 1246.0, pointsAgainst: 1804.96, playoff: false }
+            ],
             '2023': [
                 { rank: 1, teamName: "Spider 2 Y Banana", record: "9-5-0", pointsFor: 1870.72, pointsAgainst: 1612.7, playoff: true },
                 { rank: 2, teamName: "PlayBoys", record: "8-6-0", pointsFor: 1777.46, pointsAgainst: 1734.78, playoff: true },
