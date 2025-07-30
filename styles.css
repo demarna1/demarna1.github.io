@@ -96,6 +96,10 @@ body::before {
     flex: 1;
     min-width: 300px;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
 }
 
 .trophy-image {
@@ -104,21 +108,23 @@ body::before {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     border: 3px solid #ffd700;
-    max-height: 400px;
+    max-height: 320px;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 .trophy-caption {
     margin-top: 15px;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #ffd700;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid #ffd700;
     display: inline-block;
+    flex-shrink: 0;
 }
 
 .football-decoration {
@@ -406,9 +412,17 @@ body::before {
         max-width: 100%;
     }
     
-    .league-image,
-    .trophy-image {
+    .trophy-photo {
+        height: auto;
+        min-height: 300px;
+    }
+    
+    .league-image {
         max-height: 300px;
+    }
+    
+    .trophy-image {
+        max-height: 240px;
     }
     
     .trophy-caption {

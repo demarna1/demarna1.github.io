@@ -727,10 +727,9 @@ class FantasyLeagueDashboard {
 
         this.leagueData.forEach((team, index) => {
             const row = document.createElement('tr');
-            const hasPlayoffAppearances = team.playoffAppearances > 0;
             row.innerHTML = `
                 <td>${team.rank}</td>
-                <td>${hasPlayoffAppearances ? '🏆 ' : ''}${team.teamName}</td>
+                <td>${team.teamName}</td>
                 <td>${team.totalWins}-${team.totalLosses}-${team.totalTies}</td>
                 <td>${team.totalPointsFor.toFixed(2)}</td>
                 <td>${team.playoffAppearances}</td>
@@ -739,9 +738,6 @@ class FantasyLeagueDashboard {
                 <td>${team.bronze}</td>
                 <td>${team.bestFinish}</td>
             `;
-            if (hasPlayoffAppearances) {
-                row.classList.add('playoff-team');
-            }
             tableBody.appendChild(row);
         });
     }
