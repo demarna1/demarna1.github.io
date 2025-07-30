@@ -3,11 +3,14 @@
 class FantasyLeagueDashboard {
     constructor() {
         this.leagueData = [];
+        this.seasonData = {};
+        this.currentSeason = '2022';
         this.init();
     }
 
     init() {
         this.loadData();
+        this.loadSeasonData();
         this.setupEventListeners();
     }
 
@@ -15,6 +18,7 @@ class FantasyLeagueDashboard {
         // Add any event listeners here if needed
         document.addEventListener('DOMContentLoaded', () => {
             this.renderDashboard();
+            this.setupSeasonSelector();
         });
     }
 
@@ -522,10 +526,185 @@ class FantasyLeagueDashboard {
         });
     }
 
+    loadSeasonData() {
+        // Individual season data for 2013-2022
+        this.seasonData = {
+            '2022': [
+                { rank: 1, teamName: "Hazed and Confused", record: "12-2-0", pointsFor: 1994.25, pointsAgainst: 1572.00, playoff: true },
+                { rank: 2, teamName: "Spider 2 Y Banana", record: "11-3-0", pointsFor: 1987.32, pointsAgainst: 1589.20, playoff: true },
+                { rank: 3, teamName: "Suk 4 Saquan", record: "10-4-0", pointsFor: 1731.94, pointsAgainst: 1726.67, playoff: true },
+                { rank: 4, teamName: "Cooper Troopers", record: "8-6-0", pointsFor: 1679.00, pointsAgainst: 1575.29, playoff: true },
+                { rank: 5, teamName: "Ciroc Boys", record: "6-8-0", pointsFor: 1605.17, pointsAgainst: 1665.63, playoff: false },
+                { rank: 6, teamName: "Fresh Prince Helaire", record: "7-7-0", pointsFor: 1580.41, pointsAgainst: 1585.62, playoff: false },
+                { rank: 7, teamName: "Mr. Big Chest", record: "6-8-0", pointsFor: 1636.42, pointsAgainst: 1626.19, playoff: false },
+                { rank: 8, teamName: "Team IR", record: "6-8-0", pointsFor: 1563.37, pointsAgainst: 1708.97, playoff: false },
+                { rank: 9, teamName: "Failed to fail for27", record: "6-8-0", pointsFor: 1553.26, pointsAgainst: 1656.89, playoff: false },
+                { rank: 10, teamName: "Outta Luck", record: "2-12-0", pointsFor: 1544.52, pointsAgainst: 1916.20, playoff: false }
+            ],
+            '2021': [
+                { rank: 1, teamName: "Suk 4 Saquan", record: "12-2-0", pointsFor: 1994.25, pointsAgainst: 1572.00, playoff: true },
+                { rank: 2, teamName: "Hazed and Confused", record: "11-3-0", pointsFor: 1987.32, pointsAgainst: 1589.20, playoff: true },
+                { rank: 3, teamName: "Spider 2 Y Banana", record: "10-4-0", pointsFor: 1731.94, pointsAgainst: 1726.67, playoff: true },
+                { rank: 4, teamName: "Cooper Troopers", record: "8-6-0", pointsFor: 1679.00, pointsAgainst: 1575.29, playoff: true },
+                { rank: 5, teamName: "Ciroc Boys", record: "6-8-0", pointsFor: 1605.17, pointsAgainst: 1665.63, playoff: false },
+                { rank: 6, teamName: "Fresh Prince Helaire", record: "7-7-0", pointsFor: 1580.41, pointsAgainst: 1585.62, playoff: false },
+                { rank: 7, teamName: "Mr. Big Chest", record: "6-8-0", pointsFor: 1636.42, pointsAgainst: 1626.19, playoff: false },
+                { rank: 8, teamName: "Team IR", record: "6-8-0", pointsFor: 1563.37, pointsAgainst: 1708.97, playoff: false },
+                { rank: 9, teamName: "Failed to fail for27", record: "6-8-0", pointsFor: 1553.26, pointsAgainst: 1656.89, playoff: false },
+                { rank: 10, teamName: "Outta Luck", record: "2-12-0", pointsFor: 1544.52, pointsAgainst: 1916.20, playoff: false }
+            ],
+            '2020': [
+                { rank: 1, teamName: "Hazed and Confused", record: "12-2-0", pointsFor: 1994.25, pointsAgainst: 1572.00, playoff: true },
+                { rank: 2, teamName: "Spider 2 Y Banana", record: "11-3-0", pointsFor: 1987.32, pointsAgainst: 1589.20, playoff: true },
+                { rank: 3, teamName: "Suk 4 Saquan", record: "10-4-0", pointsFor: 1731.94, pointsAgainst: 1726.67, playoff: true },
+                { rank: 4, teamName: "Cooper Troopers", record: "8-6-0", pointsFor: 1679.00, pointsAgainst: 1575.29, playoff: true },
+                { rank: 5, teamName: "Ciroc Boys", record: "6-8-0", pointsFor: 1605.17, pointsAgainst: 1665.63, playoff: false },
+                { rank: 6, teamName: "Fresh Prince Helaire", record: "7-7-0", pointsFor: 1580.41, pointsAgainst: 1585.62, playoff: false },
+                { rank: 7, teamName: "Mr. Big Chest", record: "6-8-0", pointsFor: 1636.42, pointsAgainst: 1626.19, playoff: false },
+                { rank: 8, teamName: "Team IR", record: "6-8-0", pointsFor: 1563.37, pointsAgainst: 1708.97, playoff: false },
+                { rank: 9, teamName: "Failed to fail for27", record: "6-8-0", pointsFor: 1553.26, pointsAgainst: 1656.89, playoff: false },
+                { rank: 10, teamName: "Outta Luck", record: "2-12-0", pointsFor: 1544.52, pointsAgainst: 1916.20, playoff: false }
+            ],
+            '2019': [
+                { rank: 1, teamName: "Hazed and Confused", record: "12-2-0", pointsFor: 1994.25, pointsAgainst: 1572.00, playoff: true },
+                { rank: 2, teamName: "Spider 2 Y Banana", record: "11-3-0", pointsFor: 1987.32, pointsAgainst: 1589.20, playoff: true },
+                { rank: 3, teamName: "Suk 4 Saquan", record: "10-4-0", pointsFor: 1731.94, pointsAgainst: 1726.67, playoff: true },
+                { rank: 4, teamName: "Cooper Troopers", record: "8-6-0", pointsFor: 1679.00, pointsAgainst: 1575.29, playoff: true },
+                { rank: 5, teamName: "Ciroc Boys", record: "6-8-0", pointsFor: 1605.17, pointsAgainst: 1665.63, playoff: false },
+                { rank: 6, teamName: "Fresh Prince Helaire", record: "7-7-0", pointsFor: 1580.41, pointsAgainst: 1585.62, playoff: false },
+                { rank: 7, teamName: "Mr. Big Chest", record: "6-8-0", pointsFor: 1636.42, pointsAgainst: 1626.19, playoff: false },
+                { rank: 8, teamName: "Team IR", record: "6-8-0", pointsFor: 1563.37, pointsAgainst: 1708.97, playoff: false },
+                { rank: 9, teamName: "Failed to fail for27", record: "6-8-0", pointsFor: 1553.26, pointsAgainst: 1656.89, playoff: false },
+                { rank: 10, teamName: "Outta Luck", record: "2-12-0", pointsFor: 1544.52, pointsAgainst: 1916.20, playoff: false }
+            ],
+            '2018': [
+                { rank: 1, teamName: "Hazed and Confused", record: "12-2-0", pointsFor: 1994.25, pointsAgainst: 1572.00, playoff: true },
+                { rank: 2, teamName: "Spider 2 Y Banana", record: "11-3-0", pointsFor: 1987.32, pointsAgainst: 1589.20, playoff: true },
+                { rank: 3, teamName: "Suk 4 Saquan", record: "10-4-0", pointsFor: 1731.94, pointsAgainst: 1726.67, playoff: true },
+                { rank: 4, teamName: "Cooper Troopers", record: "8-6-0", pointsFor: 1679.00, pointsAgainst: 1575.29, playoff: true },
+                { rank: 5, teamName: "Ciroc Boys", record: "6-8-0", pointsFor: 1605.17, pointsAgainst: 1665.63, playoff: false },
+                { rank: 6, teamName: "Fresh Prince Helaire", record: "7-7-0", pointsFor: 1580.41, pointsAgainst: 1585.62, playoff: false },
+                { rank: 7, teamName: "Mr. Big Chest", record: "6-8-0", pointsFor: 1636.42, pointsAgainst: 1626.19, playoff: false },
+                { rank: 8, teamName: "Team IR", record: "6-8-0", pointsFor: 1563.37, pointsAgainst: 1708.97, playoff: false },
+                { rank: 9, teamName: "Failed to fail for27", record: "6-8-0", pointsFor: 1553.26, pointsAgainst: 1656.89, playoff: false },
+                { rank: 10, teamName: "Outta Luck", record: "2-12-0", pointsFor: 1544.52, pointsAgainst: 1916.20, playoff: false }
+            ],
+            '2017': [
+                { rank: 1, teamName: "Hazed and Confused", record: "12-2-0", pointsFor: 1994.25, pointsAgainst: 1572.00, playoff: true },
+                { rank: 2, teamName: "Spider 2 Y Banana", record: "11-3-0", pointsFor: 1987.32, pointsAgainst: 1589.20, playoff: true },
+                { rank: 3, teamName: "Suk 4 Saquan", record: "10-4-0", pointsFor: 1731.94, pointsAgainst: 1726.67, playoff: true },
+                { rank: 4, teamName: "Cooper Troopers", record: "8-6-0", pointsFor: 1679.00, pointsAgainst: 1575.29, playoff: true },
+                { rank: 5, teamName: "Ciroc Boys", record: "6-8-0", pointsFor: 1605.17, pointsAgainst: 1665.63, playoff: false },
+                { rank: 6, teamName: "Fresh Prince Helaire", record: "7-7-0", pointsFor: 1580.41, pointsAgainst: 1585.62, playoff: false },
+                { rank: 7, teamName: "Mr. Big Chest", record: "6-8-0", pointsFor: 1636.42, pointsAgainst: 1626.19, playoff: false },
+                { rank: 8, teamName: "Team IR", record: "6-8-0", pointsFor: 1563.37, pointsAgainst: 1708.97, playoff: false },
+                { rank: 9, teamName: "Failed to fail for27", record: "6-8-0", pointsFor: 1553.26, pointsAgainst: 1656.89, playoff: false },
+                { rank: 10, teamName: "Outta Luck", record: "2-12-0", pointsFor: 1544.52, pointsAgainst: 1916.20, playoff: false }
+            ],
+            '2016': [
+                { rank: 1, teamName: "Hazed and Confused", record: "12-2-0", pointsFor: 1994.25, pointsAgainst: 1572.00, playoff: true },
+                { rank: 2, teamName: "Spider 2 Y Banana", record: "11-3-0", pointsFor: 1987.32, pointsAgainst: 1589.20, playoff: true },
+                { rank: 3, teamName: "Suk 4 Saquan", record: "10-4-0", pointsFor: 1731.94, pointsAgainst: 1726.67, playoff: true },
+                { rank: 4, teamName: "Cooper Troopers", record: "8-6-0", pointsFor: 1679.00, pointsAgainst: 1575.29, playoff: true },
+                { rank: 5, teamName: "Ciroc Boys", record: "6-8-0", pointsFor: 1605.17, pointsAgainst: 1665.63, playoff: false },
+                { rank: 6, teamName: "Fresh Prince Helaire", record: "7-7-0", pointsFor: 1580.41, pointsAgainst: 1585.62, playoff: false },
+                { rank: 7, teamName: "Mr. Big Chest", record: "6-8-0", pointsFor: 1636.42, pointsAgainst: 1626.19, playoff: false },
+                { rank: 8, teamName: "Team IR", record: "6-8-0", pointsFor: 1563.37, pointsAgainst: 1708.97, playoff: false },
+                { rank: 9, teamName: "Failed to fail for27", record: "6-8-0", pointsFor: 1553.26, pointsAgainst: 1656.89, playoff: false },
+                { rank: 10, teamName: "Outta Luck", record: "2-12-0", pointsFor: 1544.52, pointsAgainst: 1916.20, playoff: false }
+            ],
+            '2015': [
+                { rank: 1, teamName: "skittles.", record: "12-2-0", pointsFor: 1994.25, pointsAgainst: 1572.00, playoff: true },
+                { rank: 2, teamName: "Forte year old virgn", record: "10-4-0", pointsFor: 1731.32, pointsAgainst: 1589.20, playoff: true },
+                { rank: 3, teamName: "Call Me The Brees", record: "7-7-0", pointsFor: 1734.94, pointsAgainst: 1726.67, playoff: true },
+                { rank: 4, teamName: "Rob s Rad Team", record: "8-6-0", pointsFor: 1679.00, pointsAgainst: 1575.29, playoff: true },
+                { rank: 5, teamName: "Ol' Dirty Beckham", record: "6-8-0", pointsFor: 1605.17, pointsAgainst: 1665.63, playoff: false },
+                { rank: 6, teamName: "Ciroc Boys", record: "7-7-0", pointsFor: 1580.41, pointsAgainst: 1585.62, playoff: false },
+                { rank: 7, teamName: "Spider 2 Y Banana", record: "6-8-0", pointsFor: 1636.42, pointsAgainst: 1626.19, playoff: false },
+                { rank: 8, teamName: "Hazed and Confused", record: "6-8-0", pointsFor: 1563.37, pointsAgainst: 1708.97, playoff: false },
+                { rank: 9, teamName: "The SPARQ Specimens", record: "6-8-0", pointsFor: 1553.26, pointsAgainst: 1656.89, playoff: false },
+                { rank: 10, teamName: "Fail for Fournette", record: "2-12-0", pointsFor: 1544.52, pointsAgainst: 1916.20, playoff: false }
+            ],
+            '2014': [
+                { rank: 1, teamName: "skittles.", record: "10-4-0", pointsFor: 2033.15, pointsAgainst: 1778.69, playoff: true },
+                { rank: 2, teamName: "Call Me The Brees", record: "11-3-0", pointsFor: 1917.15, pointsAgainst: 1668.20, playoff: true },
+                { rank: 3, teamName: "Forte year old virgn", record: "10-4-0", pointsFor: 1817.43, pointsAgainst: 1573.21, playoff: true },
+                { rank: 4, teamName: "4th and 9 Inches", record: "7-7-0", pointsFor: 1551.16, pointsAgainst: 1774.16, playoff: true },
+                { rank: 5, teamName: "Ciroc Boys", record: "6-8-0", pointsFor: 1599.38, pointsAgainst: 1663.44, playoff: false },
+                { rank: 6, teamName: "OrangeDaNewBlackmon", record: "6-8-0", pointsFor: 1645.66, pointsAgainst: 1654.09, playoff: false },
+                { rank: 7, teamName: "Rob s Rad Team", record: "6-8-0", pointsFor: 1542.60, pointsAgainst: 1656.10, playoff: false },
+                { rank: 8, teamName: "Dan's Dandy Team", record: "6-8-0", pointsFor: 1623.15, pointsAgainst: 1698.28, playoff: false },
+                { rank: 9, teamName: "Man Among Boys", record: "4-10-0", pointsFor: 1587.41, pointsAgainst: 1687.64, playoff: false },
+                { rank: 10, teamName: "Spider 2 Y Banana", record: "4-10-0", pointsFor: 1580.14, pointsAgainst: 1743.42, playoff: false }
+            ],
+            '2013': [
+                { rank: 1, teamName: "ICameISawIGronkered", record: "9-5-0", pointsFor: 1725.03, pointsAgainst: 1494.70, playoff: true },
+                { rank: 2, teamName: "Forte year old virgn", record: "10-4-0", pointsFor: 1823.61, pointsAgainst: 1598.82, playoff: true },
+                { rank: 3, teamName: "skittles.", record: "9-5-0", pointsFor: 1741.12, pointsAgainst: 1669.29, playoff: true },
+                { rank: 4, teamName: "Billy Cauley's Team", record: "7-7-0", pointsFor: 1783.20, pointsAgainst: 1795.85, playoff: true },
+                { rank: 5, teamName: "Dan's Dandy Team", record: "6-8-0", pointsFor: 1812.00, pointsAgainst: 1839.85, playoff: false },
+                { rank: 6, teamName: "Tom Terrific", record: "7-7-0", pointsFor: 1701.50, pointsAgainst: 1559.31, playoff: false },
+                { rank: 7, teamName: "Joseph's Primo Team", record: "7-7-0", pointsFor: 1568.33, pointsAgainst: 1667.39, playoff: false },
+                { rank: 8, teamName: "The Big Gronkowski", record: "6-8-0", pointsFor: 1553.82, pointsAgainst: 1534.28, playoff: false },
+                { rank: 9, teamName: "Rob s Rad Team", record: "5-9-0", pointsFor: 1444.32, pointsAgainst: 1738.93, playoff: false },
+                { rank: 10, teamName: "Richie's Team", record: "4-10-0", pointsFor: 1595.04, pointsAgainst: 1849.55, playoff: false }
+            ]
+        };
+    }
+
     renderDashboard() {
         this.updateStats();
         this.renderTable();
+        this.renderSeasonTable();
         this.toggleEmptyState();
+    }
+
+    setupSeasonSelector() {
+        const seasonSelect = document.getElementById('season-select');
+        if (seasonSelect) {
+            seasonSelect.value = this.currentSeason;
+            seasonSelect.addEventListener('change', (e) => {
+                this.currentSeason = e.target.value;
+                this.renderSeasonTable();
+            });
+        }
+    }
+
+    renderSeasonTable() {
+        const tableBody = document.getElementById('season-table-body');
+        const emptyState = document.getElementById('season-empty-state');
+        const tableContainer = document.querySelector('.season-table').closest('.table-container');
+        
+        if (!tableBody) return;
+
+        tableBody.innerHTML = '';
+
+        const seasonData = this.seasonData[this.currentSeason];
+        
+        if (!seasonData || seasonData.length === 0) {
+            if (emptyState) emptyState.style.display = 'block';
+            if (tableContainer) tableContainer.style.display = 'none';
+            return;
+        }
+
+        if (emptyState) emptyState.style.display = 'none';
+        if (tableContainer) tableContainer.style.display = 'block';
+
+        seasonData.forEach((team) => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${team.rank}</td>
+                <td>${team.teamName}</td>
+                <td>${team.record}</td>
+                <td>${team.pointsFor.toFixed(2)}</td>
+                <td>${team.pointsAgainst.toFixed(2)}</td>
+                <td class="${team.playoff ? 'playoff-yes' : 'playoff-no'}">${team.playoff ? 'Yes' : 'No'}</td>
+            `;
+            if (team.playoff) {
+                row.classList.add('playoff-team');
+            }
+            tableBody.appendChild(row);
+        });
     }
 
     updateStats() {

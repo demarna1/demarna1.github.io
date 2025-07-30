@@ -438,4 +438,97 @@ body::before {
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.1); }
+}
+
+/* Season Selector Styles */
+.season-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.season-selector label {
+    font-weight: 500;
+    color: #ecf0f1;
+    font-size: 0.9rem;
+}
+
+.season-selector select {
+    background: #34495e;
+    color: #ecf0f1;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.season-selector select:hover {
+    border-color: #2980b9;
+    background: #2c3e50;
+}
+
+.season-selector select:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+}
+
+/* Season Table Styles */
+.season-table {
+    margin-top: 20px;
+}
+
+.season-table th:nth-child(3),
+.season-table td:nth-child(3) {
+    text-align: center;
+    font-weight: 600;
+    color: #dc3545;
+}
+
+.season-table th:nth-child(4),
+.season-table td:nth-child(4) {
+    text-align: center;
+    font-weight: 600;
+    color: #fd7e14;
+}
+
+.season-table th:nth-child(5),
+.season-table td:nth-child(5) {
+    text-align: center;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+.season-table th:nth-child(6),
+.season-table td:nth-child(6) {
+    text-align: center;
+    font-weight: 600;
+    color: #007bff;
+}
+
+.playoff-yes {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.playoff-no {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+/* Responsive adjustments for season selector */
+@media (max-width: 768px) {
+    .season-selector {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .season-selector select {
+        width: 100%;
+    }
 } 
