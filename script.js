@@ -425,22 +425,21 @@ class FantasyLeagueDashboard {
             return;
         }
 
-        this.leagueData.forEach((team, index) => {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${team.rank}</td>
-                <td>${team.manager}</td>
-                <td>${team.teamName}</td>
-                <td>${team.totalWins}-${team.totalLosses}-${team.totalTies}</td>
-                <td>${team.totalPointsFor.toFixed(2)}</td>
-                <td>${team.playoffAppearances}</td>
-                <td>${team.gold}</td>
-                <td>${team.silver}</td>
-                <td>${team.bronze}</td>
-                <td>${team.bestFinish}</td>
-            `;
-            tableBody.appendChild(row);
-        });
+                        this.leagueData.forEach((team, index) => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${team.rank}</td>
+                        <td>${team.manager}</td>
+                        <td>${team.totalWins}-${team.totalLosses}-${team.totalTies}</td>
+                        <td>${team.totalPointsFor.toFixed(2)}</td>
+                        <td>${team.playoffAppearances}</td>
+                        <td>${team.gold}</td>
+                        <td>${team.silver}</td>
+                        <td>${team.bronze}</td>
+                        <td>${team.bestFinish}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
     }
 
     toggleEmptyState() {
