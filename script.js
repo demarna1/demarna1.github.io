@@ -4,7 +4,7 @@ class FantasyLeagueDashboard {
     constructor() {
         this.leagueData = [];
         this.seasonData = {};
-        this.currentSeason = '2022';
+        this.currentSeason = '2023';
     }
 
     init() {
@@ -22,17 +22,17 @@ class FantasyLeagueDashboard {
     }
 
     loadData() {
-        // Combined 2013-2022 Fantasy Football League Data - Grouped by Manager
+        // Combined 2013-2023 Fantasy Football League Data - Grouped by Manager
         this.leagueData = [
             {
                 manager: "Chris Gramley",
-                teamName: "Hazed and Confused",
-                totalWins: 71,
-                totalLosses: 57,
+                teamName: "Dynasty Dreaming",
+                totalWins: 83,
+                totalLosses: 59,
                 totalTies: 0,
-                totalPointsFor: 16367.61,
-                totalPointsAgainst: 15280.79,
-                playoffAppearances: 6,
+                totalPointsFor: 18216.13,
+                totalPointsAgainst: 16835.29,
+                playoffAppearances: 7,
                 gold: 3,
                 silver: 0,
                 bronze: 1,
@@ -42,56 +42,56 @@ class FantasyLeagueDashboard {
             {
                 manager: "Joe Kertsmar",
                 teamName: "Spider 2 Y Banana",
-                totalWins: 67,
-                totalLosses: 73,
+                totalWins: 76,
+                totalLosses: 78,
                 totalTies: 0,
-                totalPointsFor: 16423.76,
-                totalPointsAgainst: 16719.02,
-                playoffAppearances: 5,
-                gold: 0,
+                totalPointsFor: 18294.48,
+                totalPointsAgainst: 18331.72,
+                playoffAppearances: 6,
+                gold: 1,
                 silver: 1,
                 bronze: 2,
-                bestFinish: 2,
-                avgPointsPerGame: 1642.38
+                bestFinish: 1,
+                avgPointsPerGame: 1654.04
             },
             {
                 manager: "Richie Morris",
-                teamName: "Ciroc Boys",
-                totalWins: 67,
-                totalLosses: 73,
+                teamName: "morrich13",
+                totalWins: 75,
+                totalLosses: 79,
                 totalTies: 0,
-                totalPointsFor: 16481.69,
-                totalPointsAgainst: 16783.26,
-                playoffAppearances: 4,
+                totalPointsFor: 18123.25,
+                totalPointsAgainst: 18376.34,
+                playoffAppearances: 5,
                 gold: 0,
                 silver: 1,
                 bronze: 0,
                 bestFinish: 2,
-                avgPointsPerGame: 1648.17
+                avgPointsPerGame: 1647.57
             },
             {
                 manager: "John Adam Benson",
-                teamName: "Suk 4 Saquan",
-                totalWins: 59,
-                totalLosses: 41,
+                teamName: "PlayBoys",
+                totalWins: 67,
+                totalLosses: 47,
                 totalTies: 0,
-                totalPointsFor: 11347.28,
-                totalPointsAgainst: 10432.85,
-                playoffAppearances: 5,
+                totalPointsFor: 13124.74,
+                totalPointsAgainst: 12167.63,
+                playoffAppearances: 6,
                 gold: 2,
-                silver: 1,
+                silver: 2,
                 bronze: 1,
                 bestFinish: 1,
-                avgPointsPerGame: 1891.21
+                avgPointsPerGame: 1860.68
             },
             {
                 manager: "Rob Murray",
-                teamName: "Cooper Troopers",
-                totalWins: 47,
-                totalLosses: 53,
+                teamName: "RobMurray1990",
+                totalWins: 52,
+                totalLosses: 62,
                 totalTies: 0,
-                totalPointsFor: 10252.68,
-                totalPointsAgainst: 10817.17,
+                totalPointsFor: 11740.28,
+                totalPointsAgainst: 12628.57,
                 playoffAppearances: 4,
                 gold: 0,
                 silver: 0,
@@ -101,12 +101,12 @@ class FantasyLeagueDashboard {
             },
             {
                 manager: "Noah DeMarco",
-                teamName: "skittles.",
-                totalWins: 80,
-                totalLosses: 45,
+                teamName: "Asstronaut",
+                totalWins: 81,
+                totalLosses: 58,
                 totalTies: 0,
-                totalPointsFor: 15288.88,
-                totalPointsAgainst: 13576.86,
+                totalPointsFor: 16645.10,
+                totalPointsAgainst: 15257.04,
                 playoffAppearances: 9,
                 gold: 3,
                 silver: 1,
@@ -116,16 +116,16 @@ class FantasyLeagueDashboard {
             },
             {
                 manager: "Ryan Jones",
-                teamName: "Fresh Prince Helaire",
-                totalWins: 66,
-                totalLosses: 54,
+                teamName: "Micro Bulk LLC",
+                totalWins: 75,
+                totalLosses: 59,
                 totalTies: 0,
-                totalPointsFor: 14002.23,
-                totalPointsAgainst: 13544.58,
-                playoffAppearances: 3,
+                totalPointsFor: 15821.63,
+                totalPointsAgainst: 15193.26,
+                playoffAppearances: 4,
                 gold: 1,
                 silver: 0,
-                bronze: 0,
+                bronze: 1,
                 bestFinish: 1,
                 avgPointsPerGame: 1750.28
             },
@@ -146,13 +146,13 @@ class FantasyLeagueDashboard {
             },
             {
                 manager: "Billy Cauley",
-                teamName: "Call Me The Brees",
-                totalWins: 53,
-                totalLosses: 40,
+                teamName: "Billy432",
+                totalWins: 61,
+                totalLosses: 46,
                 totalTies: 0,
-                totalPointsFor: 10500.61,
-                totalPointsAgainst: 10368.31,
-                playoffAppearances: 4,
+                totalPointsFor: 12204.11,
+                totalPointsAgainst: 12054.59,
+                playoffAppearances: 5,
                 gold: 0,
                 silver: 1,
                 bronze: 1,
@@ -161,12 +161,12 @@ class FantasyLeagueDashboard {
             },
             {
                 manager: "Ben Gingold",
-                teamName: "The CeeDee Players",
-                totalWins: 23,
-                totalLosses: 33,
+                teamName: "NYJ Super Bowl 58 Champs",
+                totalWins: 29,
+                totalLosses: 41,
                 totalTies: 0,
-                totalPointsFor: 6354.86,
-                totalPointsAgainst: 6850.38,
+                totalPointsFor: 7975.50,
+                totalPointsAgainst: 8551.52,
                 playoffAppearances: 0,
                 gold: 0,
                 silver: 0,
@@ -188,6 +188,21 @@ class FantasyLeagueDashboard {
                 bronze: 1,
                 bestFinish: 1,
                 avgPointsPerGame: 1803.95
+            },
+            {
+                manager: "Seth Sauder",
+                teamName: "Justice for Dom",
+                totalWins: 4,
+                totalLosses: 10,
+                totalTies: 0,
+                totalPointsFor: 1499.30,
+                totalPointsAgainst: 1602.18,
+                playoffAppearances: 0,
+                gold: 0,
+                silver: 0,
+                bronze: 0,
+                bestFinish: 9,
+                avgPointsPerGame: 1499.30
             }
         ];
         
@@ -201,8 +216,20 @@ class FantasyLeagueDashboard {
     }
 
     loadSeasonData() {
-        // Individual season data for 2013-2022
+        // Individual season data for 2013-2023
         this.seasonData = {
+            '2023': [
+                { rank: 1, teamName: "Spider 2 Y Banana", record: "9-5-0", pointsFor: 1870.72, pointsAgainst: 1612.7, playoff: true },
+                { rank: 2, teamName: "PlayBoys", record: "8-6-0", pointsFor: 1777.46, pointsAgainst: 1734.78, playoff: true },
+                { rank: 3, teamName: "Micro Bulk LLC", record: "9-5-0", pointsFor: 1819.4, pointsAgainst: 1648.68, playoff: true },
+                { rank: 4, teamName: "Dynasty Dreaming", record: "12-2-0", pointsFor: 1848.52, pointsAgainst: 1554.5, playoff: true },
+                { rank: 5, teamName: "Billy432", record: "8-6-0", pointsFor: 1703.5, pointsAgainst: 1686.28, playoff: true },
+                { rank: 6, teamName: "morrich13", record: "8-6-0", pointsFor: 1641.56, pointsAgainst: 1593.08, playoff: true },
+                { rank: 7, teamName: "NYJ Super Bowl 58 Champs", record: "6-8-0", pointsFor: 1620.64, pointsAgainst: 1701.14, playoff: false },
+                { rank: 8, teamName: "RobMurray1990", record: "5-9-0", pointsFor: 1487.6, pointsAgainst: 1811.4, playoff: false },
+                { rank: 9, teamName: "Justice for Dom", record: "4-10-0", pointsFor: 1499.3, pointsAgainst: 1602.18, playoff: false },
+                { rank: 10, teamName: "Asstronaut", record: "1-13-0", pointsFor: 1356.22, pointsAgainst: 1680.18, playoff: false }
+            ],
             '2022': [
                 { rank: 1, teamName: "Hazed and Confused", record: "11-4-0", pointsFor: 2126.21, pointsAgainst: 1779.70, playoff: true },
                 { rank: 2, teamName: "PlayBoys", record: "14-1-0", pointsFor: 2016.20, pointsAgainst: 1569.41, playoff: true },
