@@ -79,9 +79,9 @@ class FantasyLeagueDashboard {
                     aVal = a.totalWins;
                     bVal = b.totalWins;
                     break;
-                case 'winPercentage':
-                    aVal = parseFloat(a.winPercentage);
-                    bVal = parseFloat(b.winPercentage);
+                case 'avgPointsFor':
+                    aVal = parseFloat(a.avgPointsFor);
+                    bVal = parseFloat(b.avgPointsFor);
                     break;
                 case 'playoffAppearances':
                     aVal = a.playoffAppearances;
@@ -205,8 +205,7 @@ class FantasyLeagueDashboard {
                 silver: stats.silver,
                 bronze: stats.bronze,
                 bestFinish: stats.bestFinish === 999 ? 0 : stats.bestFinish,
-                avgPointsPerGame: parseFloat(avgPointsPerGame),
-                winPercentage: parseFloat(winPercentage),
+                avgPointsFor: parseFloat(avgPointsPerGame),
                 totalMedals: totalMedals
             };
         });
@@ -449,7 +448,7 @@ class FantasyLeagueDashboard {
                 <td>${team.rank}</td>
                 <td>${team.manager}</td>
                 <td>${team.totalWins}-${team.totalLosses}-${team.totalTies}</td>
-                <td>${team.winPercentage}%</td>
+                <td>${team.avgPointsFor.toFixed(2)}</td>
                 <td>${team.playoffAppearances}</td>
                 <td>${team.gold}</td>
                 <td>${team.silver}</td>
