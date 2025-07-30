@@ -84,7 +84,7 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 300px;
+    height: 320px;
 }
 
 .league-image {
@@ -106,7 +106,7 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 300px;
+    height: 320px;
 }
 
 .trophy-image {
