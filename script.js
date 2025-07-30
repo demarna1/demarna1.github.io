@@ -236,13 +236,13 @@ class FantasyLeagueDashboard {
         const spans = [];
         const years = seasonResults.map(r => r.year).sort((a, b) => a - b);
         
-        // Check each possible 4-year window
-        for (let i = 0; i <= years.length - 4; i++) {
-            const windowYears = years.slice(i, i + 4);
+        // Check each possible 3-year window
+        for (let i = 0; i <= years.length - 3; i++) {
+            const windowYears = years.slice(i, i + 3);
             let totalPoints = 0;
             const windowResults = [];
             
-            // Calculate total points for this 4-year window
+            // Calculate total points for this 3-year window
             windowYears.forEach(year => {
                 const result = seasonResults.find(r => r.year === year);
                 if (result) {
@@ -251,11 +251,11 @@ class FantasyLeagueDashboard {
                 }
             });
             
-            // If total points >= 6, this is a dynasty span
-            if (totalPoints >= 6) {
+            // If total points >= 5, this is a dynasty span
+            if (totalPoints >= 5) {
                 spans.push({
                     startYear: windowYears[0],
-                    endYear: windowYears[3],
+                    endYear: windowYears[2],
                     totalPoints: totalPoints,
                     years: windowYears,
                     results: windowResults
