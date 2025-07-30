@@ -29,6 +29,12 @@ class FantasyLeagueDashboard {
                 this.sortData(sortField);
             });
         });
+        
+        // Set default sort indicator for Total Medals
+        const totalMedalsHeader = document.querySelector('[data-sort="totalMedals"]');
+        if (totalMedalsHeader) {
+            totalMedalsHeader.classList.add('sort-desc');
+        }
     }
 
     sortData(sortField) {
@@ -310,8 +316,8 @@ class FantasyLeagueDashboard {
             team.totalMedals = team.gold + team.silver + team.bronze;
         });
         
-        // Sort by total wins (descending)
-        this.leagueData.sort((a, b) => b.totalWins - a.totalWins);
+        // Sort by total medals (descending) by default
+        this.leagueData.sort((a, b) => b.totalMedals - a.totalMedals);
         
         // Add rank after sorting
         this.leagueData.forEach((team, index) => {
